@@ -1,0 +1,174 @@
+@import "base/config";
+@import "base/mixin";
+html,body{
+  height: 100%;
+  background: #fff;
+}
+.page-user-info{
+  background: #fff;
+  height: 100%;
+  .header-box.grey .header-content{
+    background: transparent;
+    &:after{
+      display: none;
+    }
+  }
+  .login-content{
+    padding-left: pxToRem($baseSpace);
+    padding-right: pxToRem($baseSpace);
+  }
+   .logo{
+     display: block;
+     margin: pxToRem(60px) auto 0 auto;
+     width: pxToRem(450px);
+     height: pxToRem(410px);
+     background: url("../images/login/login-logo.png") no-repeat;
+     background-size: cover;
+   }
+
+   .login-form-box{
+      padding: pxToRem($baseSpace);
+     .login-form{
+       margin-bottom: pxToRem(138px);
+       &.resister{
+         margin-bottom: 0;
+       }
+       &.forget{
+         margin-bottom: pxToRem(90px);
+       }
+       >li{
+          position: relative;
+         @include hair-line-b($baseBorderColor);
+         .icon-form-tool{
+           display: inline-block;
+           width: pxToRem(66px);
+           height: pxToRem(66px);
+           position: absolute;
+           top:50%;
+           right: pxToRem(16px);
+           margin-top: pxToRem(-33px);
+           z-index: 2;
+           cursor: pointer;
+         }
+         .icon-eyes{
+           background: url("../images/login/icon-eys-close.png") no-repeat;
+           background-size: cover;
+           &.active{
+             background: url("../images/login/icon-eys-open.png") no-repeat;
+             background-size: cover;
+           }
+         }
+
+         .icon-form-close{
+           background: url("../images/login/icon-form-close.png") no-repeat;
+           background-size: cover;
+         }
+         .input-text{
+            position: relative;
+            z-index: 1;
+            height: pxToRem(144px);
+            width: 100%;
+            padding-left: 0;
+            padding-right: pxToRem(90px);
+            font-size: pxToRem(48px);
+         }
+         .send-code{
+           position: absolute;
+           right: 0;
+           margin-top: pxToRem(-28px);
+           top:50%;
+           display: block;
+           height: pxToRem(56px);
+           line-height: pxToRem(56px);
+           text-align: right;
+           width: pxToRem(280px);
+           padding-right: pxToRem(10px);
+           z-index: 2;
+           color: #c8c8c8;
+           @include hair-line-l($baseBorderColor);
+         }
+
+       }
+     }
+     .tool-box{
+         margin-bottom: pxToRem(70px);
+         .button{
+           margin-bottom: pxToRem(70px);
+         }
+         .p-info{
+            height: pxToRem(140px);
+           line-height: pxToRem(140px);
+         }
+        .p-tool{
+          .color-link{
+            font-size: pxToRem(44px);
+            color: #666666;
+          }
+          .login-link{
+            float: left;
+          }
+          .register-link{
+            float: right;
+          }
+
+        }
+     }
+   }
+
+
+   .other-login{
+     position: relative;
+     .title{
+       width: 60%;
+       margin: 0 auto;
+       position: relative;
+       text-align: center;
+       height: pxToRem(120px);
+       line-height: pxToRem(120px);
+       font-weight: normal;
+       @include hair-line-t($baseBorderColor);
+       &:before{
+           top:50%;
+           z-index: 2;
+       }
+       .name{
+         position: relative;
+         font-size: pxToRem(36px);
+         color: #969696;
+         background: #fff;
+         padding: 0 pxToRem(60px);
+         z-index: 3;
+       }
+
+     }
+     .login-list{
+       padding-top: pxToRem(60px);
+       padding-bottom: pxToRem(60px);
+       @include flex-box();
+       >li{
+         flex:1;
+       }
+     }
+
+
+     .icon{
+       display: block;
+       width: pxToRem(121px);
+       height: pxToRem(121px);
+       margin: 0 auto;
+     }
+     .icon-login-wx{
+        background: url("../images/login/icon-login-wx.png") no-repeat;
+        background-size: cover;
+      }
+     .icon-login-qq{
+       background: url("../images/login/icon-login-qq.png") no-repeat;
+       background-size: cover;
+     }
+     .icon-login-wb{
+       background: url("../images/login/icon-login-wb.png") no-repeat;
+       background-size: cover;
+     }
+   }
+
+}

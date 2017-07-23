@@ -1,0 +1,145 @@
+.footer-nav-box{
+   position: relative;
+   height: pxToRem(155px);
+   .footer-nav-content{
+     position: relative;
+      height: pxToRem(155px);
+      background: #fff;
+      @include  hair-line-t($baseBorderColor);
+
+      .nav-list{
+        @include flex-box;
+        height: 100%;
+        &>li{
+          position: relative;
+          -webkit-flex: 1;
+          flex: 1;
+          height: 100%;
+          /*@include hair-line-r($baseBorderColor);*/
+          &>a{
+            @include flex-box;
+            height: pxToRem(155px);
+            color: #636363;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+          }
+          .icon-wrap{
+              position: relative;
+              display: block;
+              width: pxToRem(75px);
+              margin: 0 auto;
+              i.icon-nav{
+                display: inline-block;
+                vertical-align: middle;
+                width: pxToRem(75px);
+                height: pxToRem(75px);
+                margin-right: pxToRem(20px);
+              }
+          }
+          .text-wrap{
+            display: inline-block;
+            font-size: pxToRem(32px);
+            padding-top: pxToRem(12px);
+            line-height: 100%;
+          }
+          &.active{
+            &>a{
+              color: #5d9eff;
+            }
+            .icon-nav-home {
+              background: url("../images/bottom-pic1-blue.png") no-repeat;
+              background-size: cover;
+            }
+            .icon-nav-quota {
+              background: url("../images/bottom-pic2-blue.png") no-repeat;
+              background-size: cover;
+            }
+            .icon-nav-special{
+              background: url("../images/bottom-pic3-blue.png") no-repeat;
+              background-size: cover;
+            }
+            .icon-nav-user{
+              background: url("../images/bottom-pic4-blue.png") no-repeat;
+              background-size: cover;
+            }
+          }
+          &:last-child:after{
+            display: none;
+          }
+        }
+      }
+   }
+  .icon-nav-home {
+    background: url("../images/bottom-pic1-gray.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-nav-quota {
+    background: url("../images/bottom-pic2-gray.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-nav-special{
+    background: url("../images/bottom-pic3-gray.png") no-repeat;
+    background-size: cover;
+  }
+  .icon-nav-user{
+    background: url("../images/bottom-pic4-gray.png") no-repeat;
+    background-size: cover;
+  }
+
+
+   &.fixed{
+     .footer-nav-content {
+       position: fixed;
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       z-index: 1000;
+     }
+   }
+}
+
+
+.footer-pay-box{
+  height: pxToRem(164px);
+  .footer-pay-content{
+    position: fixed;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    height: pxToRem(164px);
+    background: #fff;
+    @include hair-line-t($baseSpace);
+    @include flex-box();
+    .left-tool{
+      flex: 1;
+      align-items: center;
+      text-align: right;
+      padding:0 pxToRem($baseSpace);
+      justify-content: flex-end;
+      @include flex-box();
+      >h4{
+        font-weight: normal;
+        font-size: pxToRem(44px);
+        color: #333333;
+        .money{
+          color: $color-warning;
+        }
+      }
+    }
+    .pay-btn{
+      color: #fff;
+      font-size: pxToRem(48px);
+      height: pxToRem(164px);
+      line-height: pxToRem(164px);
+      background: $color-primary;
+      width: pxToRem(300px);
+      text-align: center;
+      &:hover{
+        background: $color-primary-lighten;
+      }
+    }
+  }
+}

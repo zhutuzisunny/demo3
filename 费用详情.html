@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>费用详情</title>
+</head>
+<body>
+<section class="page-wrap fare-detail">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">费用详情</div>
+        </div>
+    </header>
+    <div class="container-box">
+        <div class="content-box">
+            <p>
+                <span><span class="text-left">就诊人：</span>张三</span>
+            </p>
+            <p>
+                <span><span class="text-left">社保卡：</span>1055********652752</span>
+            </p>
+            <p>
+                <span><span class="text-left">订单时间：</span>2017-02-28  09:55:35</span>
+            </p>
+            <p>
+                <span><span class="text-left">订单编号：</span>201702809535123456</span>
+            </p>
+        </div>
+
+        <div class="second-box">
+            <div class="title-text">
+                <span class="text-left">上海仁济医院南院</span>
+                <span class="text-right">药品费</span>
+            </div>
+            <div class="medicine-list-box">
+                <ul id="medicine-list-ul">
+                    <li>
+                        <span class="text-left">999感冒灵</span>
+                        <span class="text-right">25.00*2</span>
+                    </li>
+                    <li>
+                        <span class="text-left">999感冒灵</span>
+                        <span class="text-right">25.00*1</span>
+                    </li>
+                    <li>
+                        <span class="text-left">999感冒灵</span>
+                        <span class="text-right">25.00*2</span>
+                    </li>
+                    <li class="hidden">
+                        <span class="text-left">感康</span>
+                        <span class="text-right">45.00*1</span>
+                    </li>
+                    <li class="hidden">
+                        <span class="text-left">京都念慈菴</span>
+                        <span class="text-right">35.00*2</span>
+                    </li>
+                </ul>
+                <i class="arrow-up"></i>
+            </div>
+        </div>
+
+        <div class="second-box">
+            <div class="title-text">
+                <span class="text-left">应付总额</span>
+                <span class="text-right">222.00元</span>
+            </div>
+            <div class="medicine-list-box">
+                <ul>
+                    <li>
+                        <span class="text-left">订单总额</span>
+                        <span class="text-right">222.00元</span>
+                    </li>
+                    <li>
+                        <span class="text-left">个人账户支付</span>
+                        <span class="text-right">111.00元</span>
+                    </li>
+                    <li>
+                        <span class="text-left">医保系统支付</span>
+                        <span class="text-right">111.00元</span>
+                    </li>
+                    <li>
+                        <span class="text-left">附加金额</span>
+                        <span class="text-right">00.00元</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="content-box last">
+            <p>
+                <span><span class="text-left">支付时间：</span>2017-02-28  09:55:35</span>
+            </p>
+            <p>
+                <span><span class="text-left">支付方式：</span>医保个人账户支付</span>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(function(){
+        $(".arrow-up").click(function(){
+            var $li=$(this).parent().find('#medicine-list-ul').children('li.hidden');
+            if($(this).hasClass('active')){
+                $li.hide();
+                $(this).removeClass('active top').addClass('down');
+            }else{
+                $li.show();
+                $(this).addClass('active top').removeClass('down');
+            }
+
+        });
+    });
+</script>
+</body>
+</html>

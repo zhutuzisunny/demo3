@@ -1,0 +1,182 @@
+html, body {
+  height: 100%;
+  background: #fff; }
+
+.page-user-info {
+  background: #fff;
+  height: 100%; }
+  .page-user-info .header-box.grey .header-content {
+    background: transparent; }
+    .page-user-info .header-box.grey .header-content:after {
+      display: none; }
+  .page-user-info .login-content {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .page-user-info .logo {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    width: 11.25rem;
+    height: 10.25rem;
+    background: url("../images/login/login-logo.png") no-repeat;
+    background-size: cover; }
+  .page-user-info .login-form-box {
+    padding: 1rem; }
+    .page-user-info .login-form-box .login-form {
+      margin-bottom: 3.45rem; }
+      .page-user-info .login-form-box .login-form.resister {
+        margin-bottom: 0; }
+      .page-user-info .login-form-box .login-form.forget {
+        margin-bottom: 2.25rem; }
+      .page-user-info .login-form-box .login-form > li {
+        position: relative; }
+        .page-user-info .login-form-box .login-form > li:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: auto;
+          top: auto;
+          height: 1px;
+          width: 100%;
+          background-color: #d8d8d8;
+          display: block;
+          z-index: 15;
+          transform-origin: 50% 100%; }
+          @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+            .page-user-info .login-form-box .login-form > li:after {
+              transform: scaleY(0.5); } }
+          @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+            .page-user-info .login-form-box .login-form > li:after {
+              transform: scaleY(0.33); } }
+        .page-user-info .login-form-box .login-form > li .icon-form-tool {
+          display: inline-block;
+          width: 1.65rem;
+          height: 1.65rem;
+          position: absolute;
+          top: 50%;
+          right: 0.4rem;
+          margin-top: -0.825rem;
+          z-index: 2;
+          cursor: pointer; }
+        .page-user-info .login-form-box .login-form > li .icon-eyes {
+          background: url("../images/login/icon-eys-close.png") no-repeat;
+          background-size: cover; }
+          .page-user-info .login-form-box .login-form > li .icon-eyes.active {
+            background: url("../images/login/icon-eys-open.png") no-repeat;
+            background-size: cover; }
+        .page-user-info .login-form-box .login-form > li .icon-form-close {
+          background: url("../images/login/icon-form-close.png") no-repeat;
+          background-size: cover; }
+        .page-user-info .login-form-box .login-form > li .input-text {
+          position: relative;
+          z-index: 1;
+          height: 3.6rem;
+          width: 100%;
+          padding-left: 0;
+          padding-right: 2.25rem;
+          font-size: 1.2rem; }
+        .page-user-info .login-form-box .login-form > li .send-code {
+          position: absolute;
+          right: 0;
+          margin-top: -0.7rem;
+          top: 50%;
+          display: block;
+          height: 1.4rem;
+          line-height: 1.4rem;
+          text-align: right;
+          width: 7rem;
+          padding-right: 0.25rem;
+          z-index: 2;
+          color: #c8c8c8; }
+          .page-user-info .login-form-box .login-form > li .send-code:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            background-color: #d8d8d8;
+            display: block;
+            z-index: 15;
+            transform-origin: 100% 0%; }
+            @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+              .page-user-info .login-form-box .login-form > li .send-code:after {
+                transform: scaleX(0.5); } }
+            @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+              .page-user-info .login-form-box .login-form > li .send-code:after {
+                transform: scaleX(0.33); } }
+    .page-user-info .login-form-box .tool-box {
+      margin-bottom: 1.75rem; }
+      .page-user-info .login-form-box .tool-box .button {
+        margin-bottom: 1.75rem; }
+      .page-user-info .login-form-box .tool-box .p-info {
+        height: 3.5rem;
+        line-height: 3.5rem; }
+      .page-user-info .login-form-box .tool-box .p-tool .color-link {
+        font-size: 1.1rem;
+        color: #666666; }
+      .page-user-info .login-form-box .tool-box .p-tool .login-link {
+        float: left; }
+      .page-user-info .login-form-box .tool-box .p-tool .register-link {
+        float: right; }
+  .page-user-info .other-login {
+    position: relative; }
+    .page-user-info .other-login .title {
+      width: 60%;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      height: 3rem;
+      line-height: 3rem;
+      font-weight: normal; }
+      .page-user-info .other-login .title:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: auto;
+        height: 1px;
+        width: 100%;
+        background-color: #d8d8d8;
+        display: block;
+        z-index: 15;
+        transform-origin: 50% 0%; }
+        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+          .page-user-info .other-login .title:before {
+            transform: scaleY(0.5); } }
+        @media only screen and (-webkit-min-device-pixel-ratio: 3) {
+          .page-user-info .other-login .title:before {
+            transform: scaleY(0.33); } }
+      .page-user-info .other-login .title:before {
+        top: 50%;
+        z-index: 2; }
+      .page-user-info .other-login .title .name {
+        position: relative;
+        font-size: 0.9rem;
+        color: #969696;
+        background: #fff;
+        padding: 0 1.5rem;
+        z-index: 3; }
+    .page-user-info .other-login .login-list {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; }
+      .page-user-info .other-login .login-list > li {
+        flex: 1; }
+    .page-user-info .other-login .icon {
+      display: block;
+      width: 3.025rem;
+      height: 3.025rem;
+      margin: 0 auto; }
+    .page-user-info .other-login .icon-login-wx {
+      background: url("../images/login/icon-login-wx.png") no-repeat;
+      background-size: cover; }
+    .page-user-info .other-login .icon-login-qq {
+      background: url("../images/login/icon-login-qq.png") no-repeat;
+      background-size: cover; }
+    .page-user-info .other-login .icon-login-wb {
+      background: url("../images/login/icon-login-wb.png") no-repeat;
+      background-size: cover; }

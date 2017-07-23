@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>团队简介</title>
+</head>
+<body>
+<section class="page-wrap team-profile">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">团队简介</div>
+        </div>
+    </header>
+    <div class="first-box">
+        <img src="images/doctors.png">
+        <div class="text-box">
+            <span class="blue-text">中心团队</span>
+            <span>第三医院（类别：二乙）</span>
+            <span>2016-06-07成立</span>
+        </div>
+        <a class="yqy-btn" href="选择服务套餐.html">预签约</a>
+    </div>
+    <div class="jj-box">
+        <p class="jj-title">简介：</p>
+        <span class="jj-content">
+            集合第三医院各部门专家级精兵强将组成，主要有各种内外科疾病诊疗经验的医生团队。另外吸纳了很多全科医生
+            自2016年成立以来，为广大患者和居民服务诊疗数万次，服务态度良好，居民反映良好。为整个社区医生服务树立
+            了很好的典型，具有良好的社会效益，社区卫生及医疗水平在中心团队的带领下飞速提升。
+        </span>
+        <a class="zz-btn">展开</a>
+    </div>
+    <div class="member-box">
+        <div class="member-title"><span>团队成员</span></div>
+        <div class="doctor-list-box">
+            <ul>
+                <li>
+                    <a href="医生简介.html">
+                        <img src="images/doctor1.png">
+                        <div class="text-box">
+                            <h4 class="h4-title">
+                                <span class="name">宫自超</span>
+                                <span>呼吸科</span>
+                                <span>副主任医师</span>
+                            </h4>
+                            <p>南京万达医院</p>
+                        </div>
+                        <div class="item-after"><i class="iconfont icon-more"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="医生简介.html">
+                        <img src="images/doctor2.png">
+                        <div class="text-box">
+                            <h4 class="h4-title">
+                                <span class="name">陆爱珍</span>
+                                <span>全科</span>
+                                <span>副主任医师</span>
+                            </h4>
+                            <p>南京万达医院</p>
+                        </div>
+                        <div class="item-after"><i class="iconfont icon-more"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="医生简介.html">
+                        <img src="images/doctor3.png">
+                        <div class="text-box">
+                            <h4 class="h4-title">
+                                <span class="name">龚海荣</span>
+                                <span>全科</span>
+                                <span>副主任医师</span>
+                            </h4>
+                            <p>南京万达医院</p>
+                        </div>
+                        <div class="item-after"><i class="iconfont icon-more"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="医生简介.html">
+                        <img src="images/doctor4.png">
+                        <div class="text-box">
+                            <h4 class="h4-title">
+                                <span class="name">刘海平</span>
+                                <span>呼吸科</span>
+                                <span>副主任医师</span>
+                            </h4>
+                            <p>南京万达医院</p>
+                        </div>
+                        <div class="item-after"><i class="iconfont icon-more"></i></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="医生简介.html">
+                        <img src="images/doctor5.png">
+                        <div class="text-box">
+                            <h4 class="h4-title">
+                                <span class="name">马冬梅</span>
+                                <span>呼吸科</span>
+                                <span>副主任医师</span>
+                            </h4>
+                            <p>南京万达医院</p>
+                        </div>
+                        <div class="item-after"><i class="iconfont icon-more"></i></div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+
+    $('.zz-btn').click(function(){
+        if($(this).html()=="展开"){
+            $(this).html("收起");
+            $(".jj-content").css('webkit-line-clamp','9999');
+        }else if($(this).html()=="收起"){
+            $(this).html("展开");
+            $(".jj-content").css('webkit-line-clamp','3');
+        }
+    });
+
+</script>
+</body>
+</html>

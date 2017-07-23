@@ -1,0 +1,714 @@
+
+
+//区县得分
+.quota-county-point{
+  margin-top: pxToRem(30px);
+  .quota-county-table{
+    width: 100%;
+    background: #fff;
+    >thead{
+      >tr>th{
+          background: #5d9eff;
+          font-size: pxToRem(42px);
+          color: #fff;
+          text-align: center;
+          border-right:1px solid #fff;
+          line-height: pxToRem(50px);
+          font-weight: normal;
+          padding:pxToRem(20px) pxToRem(10px);
+          &:first-child{
+            width: pxToRem(152px);
+          }
+          &:last-child{
+            border-right:0;
+          }
+      }
+    }
+    >tbody{
+      >tr{
+        &:hover,
+        &:focus{
+          >td{
+            background: #cce6ff;
+          }
+        }
+        >td{
+          font-size: pxToRem(36px);
+          line-height: pxToRem(60px);
+          padding:pxToRem(20px) pxToRem(10px);
+          border: 1px solid $baseBorderColor;
+          text-align: center;
+          color: #666;
+          &:first-child{
+            border-left:0;
+          }
+          &:last-child{
+            border-right:0;
+          }
+          &.number.one{
+            color: #ffc516;
+          }
+          &.number.two{
+            color: #18a6e0;
+          }
+          &.number.three{
+            color: #e07618;
+          }
+          &.name{
+            color: #5d9aff;
+          }
+          &.red{
+            color: #ff0000;
+          }
+        }
+
+      }
+    }
+  }
+  .info-box{
+    padding: pxToRem(30px) pxToRem($baseSpace);
+    >h4{
+      color: #646464;
+      font-size: pxToRem(36px);
+      line-height: pxToRem(70px);
+      font-weight: normal;
+    }
+    >p{
+      color: #646464;
+      font-size: pxToRem(36px);
+      line-height: pxToRem(70px);
+    }
+  }
+}
+
+//专项排名
+.quota-special-rank-list{
+  padding-top: pxToRem(22px);
+  >ul{
+    >li{
+      background: #fff;
+      border-radius: pxToRem(12px);
+      margin-bottom: pxToRem(22px);
+      padding: 0 pxToRem($baseSpace);
+      .name{
+        padding: pxToRem(36px) 0;
+        position: relative;
+        line-height: pxToRem(60px);
+        font-size: pxToRem(48px);
+        color: #5d9eff;
+        .more{
+          float: right;
+          color:#0db35e;
+          font-size: pxToRem(36px);
+        }
+      }
+      .text-wrap{
+        margin: 0 pxToRem(-$baseSpace);
+        >div{
+          position: relative;
+          @include hair-line-r($baseBorderColor);
+          padding: 0 pxToRem($baseSpace);
+          &:last-child{
+            &:after{
+              display: none;
+            }
+          }
+        }
+        .item{
+           padding: pxToRem(30px) 0;
+           .text-01{
+             line-height: pxToRem(70px);
+             margin-bottom: pxToRem(18px);
+             .name{
+                color: #000;
+                font-size: pxToRem(44px);
+             }
+             .number{
+               float: right;
+               font-size: pxToRem(60px);
+               color: #0db35e;
+               font-weight: normal;
+             }
+           }
+          .text-02{
+            line-height: pxToRem(60px);
+            font-size: pxToRem(44px);
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//指标其他页面
+
+.zbzx-tab-box{
+  height: pxToRem(127px);
+  line-height: pxToRem(127px);
+  background: #f7f9fa;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+  @include  flex-box;
+  & ul{
+    flex: 1;
+    -webkit-flex: 1;
+    margin: 0 pxToRem($baseSpace/2);
+    overflow-x:auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar{
+      display: none;
+      width:0px;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+      width: 0;
+      background: transparent;
+    }
+    @include flex-box;
+
+  }
+
+  & ul li{
+    color: #646464;
+    font-size: pxToRem(38px);
+    margin: 0 pxToRem($baseSpace/2);
+  }
+  & ul li a{
+    height: pxToRem(125px);
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    color: #646464;
+    font-size: pxToRem(48px);
+    padding: 0 pxToRem(18px);
+  }
+  & ul li.active a{
+    color: #0db35e;
+    border-bottom: pxToRem(10px) solid #0db35e;
+  }
+
+  .right-tool{
+    width: pxToRem(100px);
+    @include flex-box;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .zbzx-a{
+    width: pxToRem(46px);
+    height: pxToRem(45px);
+    background: url("../images/quota/cir-arrow.png") no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+
+}
+
+
+.zbzx-slide-right-box{
+  width: 45%;
+  height: 100%;
+  position: fixed;
+  background: #f7f9fa;
+  right: -45%;
+  top: 0;
+  z-index: 10001;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  &.active{
+    right: 0;
+  }
+
+  & .slide-title{
+    height: pxToRem(146px);
+    line-height: pxToRem(140px);
+    color: #fff;
+    font-size: pxToRem(50px);
+    text-align: center;
+    background: #88c4ff;
+    position: relative;
+  }
+  & .slide-title .icon-close{
+    width: pxToRem(52px);
+    height: pxToRem(52px);
+    display: inline-block;
+    background: url("../images/quota/icon-close.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: pxToRem(28px);
+    top: pxToRem(44px);
+    cursor: pointer;
+  }
+  & .slide-box-list{
+    font-size: pxToRem(48px);
+    & ul{
+
+    }
+    & ul li{
+      height: pxToRem(124px);
+      line-height: pxToRem(124px);
+      color: #333;
+      border-bottom: 1px solid #dcdcdc;
+      padding-left: pxToRem(45px);
+      position: relative;
+      a{
+        color: #333;
+      }
+    }
+    & ul li.active{
+      color: #78acfe;
+    }
+    & ul li.active i{
+      width: pxToRem(44px);
+      height: pxToRem(34px);
+      display: inline-block;
+      position: absolute;
+      right: pxToRem(38px);
+      top:pxToRem(48px);
+      background: url("../images/quota/blue-yes.png") no-repeat;
+      background-size: cover;
+    }
+    & ul li a{
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+.zbzx-title-box{
+  height: pxToRem(99px);
+  line-height: pxToRem(99px);
+  color: #646464;
+  font-size: pxToRem(40px);
+  & i{
+    position: relative;
+    width: pxToRem(51px);
+    height: pxToRem(51px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-left: pxToRem(23px);
+    margin-right: pxToRem(7px);
+    &:before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 0;
+      background: #d7efff;
+      border-radius: 50%;
+      left: pxToRem(6px);
+      top:pxToRem(4px);
+    }
+    &:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 2;
+      left: 0;
+    }
+  }
+  i.icon1{
+    &:after{
+      background: url("../images/quota/icon1.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  i.icon2{
+    &:after {
+      background: url("../images/quota/icon2.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  i.icon3{
+    &:after {
+      background: url("../images/quota/icon3.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  i.icon4{
+    &:after {
+      background: url("../images/quota/icon4.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.zbzx-list-box{
+  background: #fff;
+  .default-list{
+    .item-inner{
+      margin-left: 0;
+      padding-left: pxToRem($baseSpace);
+      .item-center{
+          font-size: pxToRem(44px);
+      }
+      .item-right{
+        padding-right: pxToRem(18px);
+         .number{
+            font-size: pxToRem(56px);
+            color: #0db35e;
+           font-weight: normal;
+         }
+        .until{
+            font-size: pxToRem(36px);
+        }
+      }
+    }
+  }
+}
+
+.zbcx-gray-bar{
+  height: pxToRem(68px);
+  line-height: pxToRem(68px);
+  font-size: pxToRem(50px);
+  color: #00ba73;
+  background: #f7f7f7;
+  padding-left: pxToRem(42px);
+}
+.search-list-box{
+  background: #fff;
+  & ul{
+    margin-left: pxToRem($baseSpace);
+    margin-right: pxToRem($baseSpace);
+  }
+  & ul li{
+    height: pxToRem(140px);
+    line-height: pxToRem(140px);
+    color: #333;
+    font-size: pxToRem(44px);
+    border-bottom: 1px solid #dcdcdc;
+  }
+  & ul li:last-child{
+    border-bottom: none;
+  }
+  .input-check{
+    border: 1px solid $baseBorderColor;
+    background: none;
+    margin-top: pxToRem(-9px);
+    &:after{
+      display: none;
+    }
+    &:checked{
+      border:0;
+      background: $color-primary;
+      &:after{
+        display: block;
+      }
+    }
+  }
+}
+.fixed-adc {
+  position: fixed;
+  right: pxToRem(12px);
+  top: pxToRem(170px);
+  & a{
+    display: block;
+    font-size: pxToRem(32px);
+    color: #7a7a7a;
+  }
+  & a.active{
+    color: #16b3b1;
+  }
+}
+
+
+.plane-box {
+  & .plane-header .name i.icon{
+    position: relative;
+    width: pxToRem(51px);
+    height: pxToRem(51px);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: pxToRem(18px);
+    &:before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 0;
+      background: #d7efff;
+      border-radius: 50%;
+      left: pxToRem(6px);
+      top:pxToRem(4px);
+    }
+    &:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 2;
+      left: 0;
+    }
+
+  }
+  .icon-box1{
+    &:after{
+      background: url("../images/quota/xq1.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .icon-box2{
+    &:after {
+      background: url("../images/quota/xq2.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .icon-box3{
+    &:after {
+      background: url("../images/quota/xq3.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .icon-box4{
+    &:after {
+      background: url("../images/quota/xq4.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.index-swiper-02 .chart-box {
+  height: pxToRem(1200px);
+}
+.swiper-out-box{
+  margin-left: pxToRem(18px);
+  margin-right: pxToRem(18px);
+  border-radius: 8px;
+  margin-top: pxToRem(23px);
+}
+.tag-box{
+  width: pxToRem(1200px);
+  height: pxToRem(96px);
+  line-height: pxToRem(96px);
+  font-size: pxToRem(30px);
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+  & i{
+    width: pxToRem(15px);
+    height: pxToRem(15px);
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: pxToRem(36px);
+    margin-right: 3px;
+  }
+  & i.tag1{
+    background: #58abf9;
+  }
+  & i.tag2{
+    background: #74caf7;
+  }
+  & i.tag3{
+    background: #839fdf;
+  }
+  & i.tag4{
+    background: #d79de3;
+  }
+  & i.tag5{
+    background: #f9be58;
+  }
+  & i.tag6{
+    background: #fbd561;
+  }
+  & i.tag7{
+    background: #b5ea7c;
+  }
+  & i.tag8{
+    background: #fa9c7d;
+  }
+  & i.tag9{
+    background: #55dfa6;
+  }
+}
+
+.page-quota-detail{
+  @include flex-box;
+  flex-direction: column;
+}
+
+.zbzx-detail-box{
+     flex: 1;
+     -webkit-flex: 1;
+     border-radius: pxToRem(18px);
+     overflow: hidden;
+     margin:0 pxToRem($baseSpace/2) pxToRem($baseSpace/2) pxToRem($baseSpace/2);
+     .swiper-slide{
+       @include flex-box;
+       flex-direction: column;
+     }
+    .plane-box{
+      margin-bottom: 0;
+      @include flex-box;
+      flex-direction: column;
+      flex: 1;
+      -webkit-flex: 1;
+      &:first-child{
+        //border-radius:pxToRem(18px) pxToRem(18px) 0 0;
+      }
+      &:last-child{
+        //border-radius:0 0 pxToRem(18px) pxToRem(18px);
+        &:after{
+          display: none;
+        }
+      }
+      .plane-header{
+        &:after{
+          display: none;
+        }
+      }
+      .plane-content{
+        display: block;
+        flex: 1;
+        -webkit-flex: 1;
+        @include flex-box;
+        flex-direction: column;
+      }
+    }
+    .chart-box{
+      height: 100%;
+      flex: 1;
+      -webkit-flex: 1;
+    }
+}
+
+.zbzx-template-box{
+   .plane-box{
+     margin-bottom: 0;
+     &:before{
+       display: none;
+     }
+     .plane-header{
+       &:after{
+         display: none;
+       }
+     }
+   }
+   .chart-box{
+     height: pxToRem(600px);
+   }
+}
+
+.zbzxmb-list-box{
+  padding-bottom:pxToRem(20px);
+  & ul{
+
+  }
+  & ul li{
+    height: pxToRem(72px);
+    line-height: pxToRem(72px);
+    font-size: pxToRem(40px);
+  }
+  & ul li .span-num{
+    color: #24a8e5;
+    padding-left: pxToRem(46px);
+    font-style: italic;
+    display: inline-block;
+    width: pxToRem(80px);
+    text-align: center;
+  }
+  & ul li .hospital-name{
+    color: #333;
+    display: inline-block;
+    margin-left: pxToRem(28px);
+  }
+  & ul li .green-text{
+    float: right;
+    color: #02af6d;
+    margin-right: pxToRem(70px);
+  }
+
+}
+.icon-data-box{
+  width: pxToRem(250px);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: pxToRem(46px);
+  color: #a1b3ad;
+  & .icon-data{
+    width: pxToRem(176px);
+    height: pxToRem(174px);
+    background: url("../images/quota/icon-data.png") no-repeat;
+    background-size: cover;
+    display: block;
+    margin-top: pxToRem(110px);
+    margin-bottom: pxToRem(28px);
+  }
+}
+
+
+.ylfw-list{
+  background: #fff;
+  margin-top: pxToRem(20px);
+  .default-list{
+    >li{
+      .item-inner{
+        margin-left: 0;
+        padding-left: pxToRem($baseSpace);
+        .item-center{
+          font-size: pxToRem(44px);
+        }
+      }
+    }
+  }
+  .icon-list{
+    width: pxToRem(109px);
+    height: pxToRem(109px);
+    display: inline-block;
+  }
+  .icon1{
+    background: url("../images/quota/zbzx1.png") no-repeat;
+    background-size: cover;
+  }
+  .icon2{
+    background: url("../images/quota/zbzx2.png") no-repeat;
+    background-size: cover;
+  }
+  .icon3{
+    background: url("../images/quota/zbzx3.png") no-repeat;
+    background-size: cover;
+  }
+  .icon4{
+    background: url("../images/quota/zbzx4.png") no-repeat;
+    background-size: cover;
+  }
+  .icon5{
+    background: url("../images/quota/zbzx5.png") no-repeat;
+    background-size: cover;
+  }
+  .icon6{
+    background: url("../images/quota/zbzx6.png") no-repeat;
+    background-size: cover;
+  }
+  .icon7{
+    background: url("../images/quota/zbzx7.png") no-repeat;
+    background-size: cover;
+  }
+  .icon8{
+    background: url("../images/quota/zbzx8.png") no-repeat;
+    background-size: cover;
+  }
+  .icon9{
+    background: url("../images/quota/zbzx9.png") no-repeat;
+    background-size: cover;
+  }
+ .icon10{
+    background: url("../images/quota/zbzx10.png") no-repeat;
+    background-size: cover;
+  }
+}
+

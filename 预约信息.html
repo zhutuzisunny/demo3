@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>预约信息</title>
+</head>
+<style>
+    html,body{
+        height: 100%;
+    }
+</style>
+<body>
+<section class="page-wrap yyxx-box">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">预约信息</div>
+        </div>
+    </header>
+    <div class="first-box">
+        <i class="doctor-icon"></i>
+        <div class="text-box">
+            <p>
+                <span class="name-span">龚海荣</span>
+                <span>副主任医师</span>
+            </p>
+            <p>
+                <span>万达医院</span>
+                <span>呼吸科</span>
+            </p>
+        </div>
+    </div>
+    <div class="second-list-box">
+        <ul>
+            <li>
+                <span class="text-left">就诊时间</span>
+                <span class="text-right">2017-2-24上午</span>
+            </li>
+            <li>
+                <span class="text-left">门诊类型</span>
+                <span class="text-right">专家门诊</span>
+            </li>
+            <li>
+                <span class="text-left">挂号费用</span>
+                <span class="text-right"><span class="yellow-text">36元</span></span>
+            </li>
+        </ul>
+    </div>
+    <div class="last-box">
+        <a>
+            <span class="text-left">就诊人</span>
+            <span class="text-right">
+                <span class="blue-text">添加就诊家人</span>
+                <i class="arrow-right"></i>
+            </span>
+        </a>
+    </div>
+
+
+    <div class="qd-btn-box">
+        <a class="qd-btn" href="#">确定预约</a>
+    </div>
+
+    <div class="pay-list-box">
+        <div class="bg"></div>
+        <ul>
+            <li class="title">请选择支付方式<i class="close-btn"></i></li>
+            <li class="active">
+                <a>
+                    <i class="icon-box icon1"></i>
+                    <span>微信支付</span>
+                    <i class="yes-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon-box icon2"></i>
+                    <span>支付宝</span>
+                    <i class="yes-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon-box icon3"></i>
+                    <span>Apple Pay</span>
+                    <i class="yes-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon-box icon4"></i>
+                    <span>到医院付</span>
+                    <i class="yes-icon"></i>
+                </a>
+            </li>
+            <li>
+                <div class="pay-btn-box">
+                    <a class="pay-btn" href="预约详情(成功).html">确认支付</a>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.pay-list-box').find("li").click(function(){
+            if( ! $(this).hasClass('active')){
+                $(this).addClass('active').siblings().removeClass('active');
+            }else{
+                $(this).removeClass('active');
+            }
+
+        })
+    });
+
+    $('.qd-btn').click(function(){
+        $('.pay-list-box').show();
+    });
+
+    $('.close-btn').click(function(){
+        $('.pay-list-box').hide();
+    })
+
+
+</script>
+</body>
+</html>

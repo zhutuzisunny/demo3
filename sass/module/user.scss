@@ -1,0 +1,677 @@
+
+$baseBorderColor:#cfcfcf;  //分割线颜色
+$headerBg:#f5f7fc;  //头部背景
+$common-fontColor:#333 !default;//字体颜色
+$common-fontSize:pxToRem(36px) !default;//字体颜色
+$a-link-color:#088aec !default; //
+
+
+
+.page-user{
+
+  .default-list{
+    >li{
+      .item-inner{
+        margin-left: 0;
+      }
+    }
+  }
+
+  //我的收藏内容
+  .ad-box{
+    position:absolute;
+    left:pxToRem(50px);
+    width:pxToRem(140px);
+    height:pxToRem(140px);
+    overflow: hidden;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .state-level{
+    color:$a-link-color;
+    margin-right:pxToRem(10px);
+    font-size:$common-fontSize;
+  }
+
+  .doc-box{
+    position:absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    left:pxToRem(50px);
+    width:pxToRem(160px);
+    height:pxToRem(160px);
+    overflow: hidden;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  .question-box{
+    position:absolute;
+    font-size:pxToRem(42px);
+    .question{
+      color:#000;
+    }
+    .answer{
+      width:pxToRem(900px);
+      margin-top: pxToRem(10px);
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color:#666;
+    }
+  }
+  .item-inner.big-box{
+    padding-top:pxToRem(40px);
+
+    padding-bottom:pxToRem(40px);
+  }
+  .text-box{
+    position:absolute;
+    left:pxToRem(220px);
+    .doc-base{
+      color:#666;
+      width:pxToRem(580px);
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      font-size:$common-fontSize;
+      .doc-name{
+        color:$a-link-color;
+        font-size:pxToRem(42px);
+        margin-right:pxToRem(40px);
+      }
+      .doc-num{
+        font-size:pxToRem(42px);
+        margin-right:pxToRem(60px);
+      }
+      .doc-text{
+        margin-right:pxToRem(40px);
+        color: #f89e00;
+      }
+      .doc-yibao{
+        width: pxToRem(92px);
+        height: pxToRem(50px);
+        line-height: pxToRem(45px);
+        text-align: center;
+        border: 1px solid #b4b4b4;
+        color: #b4b4b4;
+        font-size: pxToRem(32px);
+        border-radius: pxToRem(26px);
+        display: inline-block;
+        margin-left: pxToRem(22px);
+      }
+      &:last-child{
+        margin-top:pxToRem(10px);
+      }
+    }
+  }
+
+  //账单
+  .bill-box{
+    position:relative;
+
+  }
+  .time-box{
+    height:pxToRem(90px);
+    line-height:pxToRem(90px);
+    background:#dcdcdc;
+    font-size:pxToRem(36px);
+    color:#000;
+    padding-left:pxToRem(40px);
+
+  }
+  .bill-ul{
+    width:100%;
+
+  }
+  .bill-li{
+    position:relative;
+    width:100%;
+    height:pxToRem(150px);
+    background:#fff;
+    .each-time{
+      position:absolute;
+      top:pxToRem(20px);
+      left:pxToRem(40px);
+      p{
+        font-size:pxToRem(36px);
+        text-align: center;
+        color:#666;
+      }
+    }
+    .yuan{
+      position:absolute;
+      top:pxToRem(30px);
+      left:pxToRem(200px);
+      display: block;
+      width:pxToRem(90px);
+      height:pxToRem(90px);
+      text-align: center;
+      line-height:pxToRem(90px);
+      border-radius:50%;
+      color:#fff;
+      font-size:pxToRem(42px);
+      background:#80c269;
+      &.orange{
+        background:#f8b551;
+      }
+    }
+    .bill-item{
+      position:absolute;
+      top:pxToRem(20px);
+      left:pxToRem(360px);
+      color:#000;
+      font-size:pxToRem(36px);
+      .money{
+        text-align: left;
+      }
+      .address{
+        text-align: left;
+      }
+    }
+  }
+
+  //预约
+  .user-name,.user-title{
+    color:#000;
+  }
+  .user-name{
+    margin-left:pxToRem(20px);
+  }
+  .check{
+    position:absolute;
+    right:pxToRem(50px);
+    top:50%;
+    transform: translate(0,-50%);
+    color:$a-link-color;
+  }
+  .doc{
+    position:relative;
+    display: block;
+    text-align: left;
+    font-size:pxToRem(36px);
+    color:#666;
+    &:first-child{
+      //padding-top:pxToRem(20px);
+      color:#000;
+    }
+    .second{
+      position:absolute;
+      left:pxToRem(230px);
+    }
+  }
+
+
+  //个人中心
+  .user-info-box{
+    position:relative;
+    top:0;
+    left:0;
+    height:pxToRem(534px);
+    background:url("../images/wy/big-bg.png") no-repeat;
+    background-size:100% 100%;
+    .user-info{
+      position:absolute;
+      top:50%;
+      transform: translate(0 ,-50%);
+      left:pxToRem(120px);
+
+    }
+
+  }
+  .user-photo{
+    width:pxToRem(130px);
+    height:pxToRem(130px);
+    overflow: hidden;
+    border-radius:50%;
+    box-shadow:0 0 10px 4px #0baaf3;
+    img{
+      width:100%;
+      height:100%;
+
+    }
+  }
+  .user-sign-box{
+    position:absolute;
+    top:pxToRem(-30px);
+    left:pxToRem(200px);
+    width:pxToRem(800px);
+    color:#fff;
+    .h3-name{
+      font-size:pxToRem(54px);
+
+    }
+    .sign-box{
+      display: block;
+      span{
+        position:relative;
+        display: inline-block;
+        font-size:pxToRem(32px);
+        background:#066b99;
+        padding:pxToRem(10px) pxToRem(30px);
+        border-radius:pxToRem(40px);
+      }
+      .agree{
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          width:pxToRem(40px);
+          height:pxToRem(40px);
+          background:url("../images/wy/agree.png") no-repeat;
+          background-size:cover;
+        }
+      }
+      .one{
+        i{
+          display: inline-block;
+          vertical-align: middle;
+          width:pxToRem(80px);
+          height:pxToRem(36px);
+          background:url("../images/wy/oneoneone.png") no-repeat;
+          background-size:cover;
+        }
+      }
+    }
+  }
+  .tab-box{
+    position:relative;
+    width:100%;
+    background:#fff;
+    height:pxToRem(150px);
+    line-height:pxToRem(150px);
+    font-size:pxToRem(42px);
+    color:#006ad7;
+    margin-bottom:pxToRem(18px);
+    >a.my-tab{
+      position:relative;
+      float: left;
+      width:50%;
+      text-align: center;
+      @include hair-line-r($baseBorderColor);
+      .my-tab-text{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: pxToRem(20px);
+        margin-top: pxToRem(-6px);
+        width:pxToRem(80px);
+        height:pxToRem(80px);
+        &.yy{
+          background:url("../images/wy/module1.png") no-repeat;
+          background-size:cover;
+        }
+        &.qy{
+          background:url("../images/wy/module2.png") no-repeat;
+          background-size:cover;
+        }
+      }
+      &:last-child{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .icon-bar{
+    display: block;
+    width:pxToRem(50px);
+    height:pxToRem(50px);
+    &.f1{
+      background:url("../images/wy/f1.png") no-repeat;
+      background-size:cover;
+    }
+    &.f2{
+      background:url("../images/wy/f2.png") no-repeat;
+      background-size:cover;
+    }
+    &.f3{
+      background:url("../images/wy/f3.png") no-repeat;
+      background-size:cover;
+    }
+    &.f4{
+      background:url("../images/wy/f4.png") no-repeat;
+      background-size:cover;
+    }
+    &.f5{
+      background:url("../images/wy/f5.png") no-repeat;
+      background-size:cover;
+    }
+    &.f6{
+      background:url("../images/wy/f6.png") no-repeat;
+      background-size:cover;
+    }
+  }
+  .item-inner{
+    padding-left:pxToRem(50px);
+  }
+  //个人中心END
+
+  //一像素解决方案
+  .c{
+    position:relative;
+    z-index: 1;
+  }
+  .c:before {
+    content: '';
+    border-top: 1px solid $baseBorderColor;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    transform-origin: 50% 0%; }
+  .c:after {
+    content: '';
+    border-top: 1px solid $baseBorderColor;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 50% 100%; }
+  .d{
+    position:relative;
+  }
+  .d:after {
+    content: '';
+    border-top: 1px solid $baseBorderColor;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: 50% 100%; }
+  .user-list-box{
+     &:before,
+     &:after{
+        display: none;
+     }
+    .user-list{
+      >li{
+        .item-inner{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  //我的药箱
+  .my-medicine-chest{
+     >li{
+       background: #fff;
+       margin-bottom: pxToRem(14px);
+       .item-inner{
+         padding-top: pxToRem(30px);
+         padding-bottom: pxToRem(30px);
+         &:after{
+           display: none;
+         }
+       }
+       .item-content{
+         >h4{
+            font-weight: normal;
+             font-size: pxToRem(42px);
+            .name{
+              margin-right: pxToRem(20px);
+            }
+         }
+         >p{
+           font-size: pxToRem(42px);
+            color: #999999;
+         }
+       }
+       .item-right{
+         padding-right: pxToRem(30px);
+       }
+       .item-after{
+         color: #999999;
+         font-size: pxToRem(42px);
+       }
+       .icon-alarm-clock{
+         display: inline-block;
+         vertical-align: middle;
+          width: pxToRem(75px);
+          height: pxToRem(75px);
+          background: url("../images/icon-alarm-clock-grey.png") no-repeat;
+          background-size: cover;
+         &.active{
+           background: url("../images/icon-alarm-clock-active.png") no-repeat;
+           background-size: cover;
+         }
+       }
+     }
+  }
+
+  //药品说明
+  .drug-description{
+    background: #fff;
+    margin-bottom: pxToRem(16px);
+    .drug-description-title{
+       padding:pxToRem(30px) pxToRem($baseSpace) pxToRem(10px) pxToRem($baseSpace);
+       font-size: pxToRem(42px);
+       color: #333333;
+       font-weight: normal;
+    }
+    .drug-description-content{
+      padding:0 pxToRem($baseSpace) pxToRem(10px) pxToRem($baseSpace);
+      >p{
+          font-size: pxToRem(42px);
+          line-height: pxToRem(72px);
+          color: #666666;
+           margin-bottom: pxToRem(20px);
+      }
+    }
+  }
+
+
+  .medication-remind-day{
+    background: #fff;
+    margin-bottom: pxToRem(18px);
+
+    .top-list{
+      position: relative;
+      @include hair-line-b($baseBorderColor);
+      @include flex-box();
+      align-items: center;
+      padding: pxToRem(30px) pxToRem($baseSpace) pxToRem(30px) 0;
+      margin-left: pxToRem($baseSpace);
+      .left-tool{
+        flex: 1;
+        >h4{
+          font-size: pxToRem(42px);
+          color: #333333;
+          font-weight: normal;
+        }
+        >p{
+          font-size: pxToRem(42px);
+          color: #999;
+        }
+      }
+      .right-tool{
+
+      }
+    }
+
+    .default-list{
+      margin-left: pxToRem($baseSpace);
+      >li{
+        .item-inner{
+          padding-left: 0;
+          margin-left: pxToRem($baseSpace);
+        }
+        .item-title{
+          font-size: pxToRem(42px);
+        }
+        .item-content{
+          position: relative;
+          .arrow{
+            position: absolute;
+            right: 0;
+            top:50%;
+            margin-top: pxToRem(-27px);
+            display: inline-block;
+            width: pxToRem(54px);
+            height: pxToRem(54px);
+            text-align: center;
+            line-height: pxToRem(54px);
+            vertical-align: middle;
+            z-index: 1;
+            transform: rotate(90deg);
+            color: #adadad;
+            font-size: pxToRem(50px);
+          }
+          .number-text{
+            position: absolute;
+            top:50%;
+            right: 0;
+            margin-top: pxToRem(-40px);
+            height: pxToRem(80px);
+            line-height: pxToRem(80px);
+            font-size: pxToRem(42px);
+            color: #999999;
+           /* .number{
+                font-size: pxToRem(44px);
+                color: #06a2ff;
+                font-weight: normal;
+                padding-right: pxToRem(12px);
+            }*/
+          }
+        }
+        .input-text{
+          position: relative;
+          text-align: right;
+          color: #06a2ff;
+          font-size: pxToRem(44px);
+          padding-right: pxToRem(70px);
+          background: transparent;
+          height: pxToRem(100px);
+          z-index: 2;
+          &.op{
+            padding-right: pxToRem(220px)
+          }
+        }
+      }
+    }
+
+  }
+
+  .medication-remind-box{
+    .default-list{
+      >li{
+        background: #fff;
+        margin-bottom: pxToRem(18px);
+        .item-inner{
+           &:after{
+             display: none;
+           }
+          .item-content{
+             color: #333333;
+             font-size: pxToRem(42px);
+          }
+          .item-right{
+              font-size: pxToRem(44px);
+              color: #999999;
+              margin-right: pxToRem(30px);
+              .time{
+                color: #06a2ff;
+              }
+          }
+        }
+      }
+    }
+  }
+
+  .quite-list{
+      >li{
+          .item-content{
+              text-align: center;
+          }
+      }
+  }
+
+  .personal-information-list{
+    >li{
+      position: relative;
+      .item-inner{
+        .item-right{
+          font-size: pxToRem(39px);
+          color: #666;
+          padding-right: pxToRem(24px);
+          .img-header{
+               display: block;
+              padding-top: pxToRem(24px);
+              padding-bottom: pxToRem(24px);
+            >img{
+                width: pxToRem(120px);
+                height: pxToRem(120px);
+                border-radius: 50%;
+              }
+          }
+        }
+      }
+      .input-file{
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        top:0;
+        right: 0;
+        bottom:0;
+        opacity: 0;
+        background: transparent;
+      }
+    }
+  }
+
+  .change-phone-from{
+    >li{
+      .item-inner{
+        .item-title{
+          width: pxToRem(200px);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* Retina 适配 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 200 / 100), only screen and (min-device-pixel-ratio: 2) {
+  div.c:after,
+  div.c:before {
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5); }
+  .d:after{
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+  }
+}
+
+/* 三倍屏 适配 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5), only screen and (min--moz-device-pixel-ratio: 2.5), only screen and (-o-min-device-pixel-ratio: 250 / 100), only screen and (min-device-pixel-ratio: 2.5) {
+  div.c:after,
+  div.c:before {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333); }
+  .d:after {
+    -webkit-transform: scaleY(0.33333);
+    transform: scaleY(0.33333);
+  }
+}
+
+
+

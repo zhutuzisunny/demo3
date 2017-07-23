@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>服务评价</title>
+</head>
+<body>
+<section class="page-wrap service-comment">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">服务评价</div>
+        </div>
+    </header>
+    <div class="fwpj-out-box">
+        <div class="fwpj-box">
+            <span class="blue-span">护理服务</span>
+            <span>服务时间：2016-12-26</span>
+            <span>服务医生：李晓华</span>
+            <span>签约服务：上门诊疗</span>
+            <div class="pj-box">
+                <span>服务及时性：</span>
+                <div class="star-box">
+                    <ul>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pj-box">
+                <span>服务专业性：</span>
+                <div class="star-box">
+                    <ul>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pj-box">
+                <span>服务态度：</span>
+                <div class="star-box">
+                    <ul>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                        <li>
+                            <a class="star"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="pj-text-box">
+        <textarea id="text" onfocus="clearText(this)" onblur="text(this);"></textarea>
+        <div id="tip">可描述对于服务的意见和建议，谢谢您的反馈</div>
+    </div>
+
+    <div class="tj-btn-box">
+        <a href="我的签约服务.html">提交</a>
+    </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var $star = $(".star-box");
+
+        $star.each(function(index){
+            //console.log(index);
+            var $li = $(this).find("li");
+            var $active = $(this).find("active");
+            var i = iScore = iStar = 0;
+            $li.click(function()
+            {
+                var index = $(this).index()+1;
+                iStar = $(this).index()+1;
+                curPoint($li,index);
+                //$active.text(sText);
+            })
+        });
+
+
+        function curPoint($li,pNum)
+        {
+            if(pNum){
+                iScore = pNum;
+            }else{
+                iScore = iStar;
+            }
+            for (i = 0; i < $li.length; i++)
+            {
+                if(i < iScore){
+                    $li.eq(i).addClass("active");
+                }else{
+                    $li.eq(i).removeClass("active");
+                }
+            }
+        }
+    });
+
+
+    $('#tip').click(function(){
+        $('#text').focus()
+    });
+    function clearText(obj)
+    {
+        $('#tip').hide();
+    }
+    function text(obj)
+    {
+        if(obj.value==""){
+            $('#tip').show();
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+//Buttons
+$buttonList:(primary,$color-primary,$color-primary-darken),
+            (success,$color-success,$color-success-darken),
+            (info,$color-info,$color-info-darken),
+            (danger,$color-danger,$color-danger-darken),
+            (warning,$color-warning,$color-warning-darken);
+$baseButtonHight:120px;
+$baseButtonMinHight:72px;
+
+
+@mixin buttonStyle($name,$color,$colorActive){
+  .button.button-#{$name}{
+      border-color:$color;
+      background-color:$color;
+      color:#fff;
+      &:active,
+      &.active{
+        border-color:$colorActive;
+        background-color:$colorActive;
+        color:#fff;
+      }
+  }
+  .button.button-line.button-#{$name}{
+    border-color:$color;
+    background-color:transparent;
+    color:$color;
+    &:active,
+    &.active{
+      border-color:$colorActive;
+      background-color:transparent;
+      color:$colorActive;
+    }
+  }
+}
+
+.button {
+  border: 1px solid $baseBorderColor;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: none;
+  margin: 0;
+  white-space: nowrap;
+  position: relative;
+  text-overflow:ellipsis;
+  font-family: inherit;
+  cursor: pointer;
+  color: $color-text;
+  height: pxToRem($baseButtonHight);
+  line-height: pxToRem($baseButtonHight);
+  border-radius: pxToRem($baseButtonHight/10);
+  font-size: pxToRem($baseFontSize-lg);
+  input[type="submit"],
+  input[type="button"]{
+    width: 100%;
+  }
+  &:active,
+  &.active{
+    color: $color-text;
+    background: #f1f1f1;
+  }
+  &:disabled,
+  &.disabled{
+    border-color: #dcdcdc !important;
+    color: #fff !important;
+    cursor: not-allowed !important;
+    background-color: #dcdcdc !important;
+  }
+  &.button-round{
+    border-radius: pxToRem($baseButtonHight/2);
+  }
+  &.button-sm{
+    height: pxToRem($baseButtonMinHight);
+    line-height: pxToRem($baseButtonMinHight);
+    border-radius: pxToRem($baseButtonMinHight/10);
+    font-size: pxToRem($baseFontSize-sm);
+    &.button-round{
+      border-radius: pxToRem($baseButtonMinHight/2);
+    }
+    &.button-inline{
+      display: inline-block;
+      padding-left: pxToRem($baseButtonMinHight/3);
+      padding-right: pxToRem($baseButtonMinHight/3);
+      i.icon {
+        margin-right: pxToRem(20px);
+      }
+    }
+  }
+  i.icon {
+    margin-right: pxToRem(30px);
+  }
+
+  &.button-inline{
+    display: inline-block;
+    padding-left: pxToRem($baseButtonHight/2);
+    padding-right: pxToRem($baseButtonHight/2);
+  }
+
+}
+
+@each $name,$color,$colorActive  in $buttonList {
+  @include buttonStyle($name,$color,$colorActive);
+}
+
+.button-row{
+  -webkit-align-self: center;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-lines: single;
+  -moz-box-lines: single;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-right: -1px;
+  align-content: center;
+  justify-content: center;
+  .button{
+
+    margin-left: -1px;
+    border-radius: 0;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    &.button-sm{
+      border-radius: 0;
+      &:first-child{
+        border-radius: pxToRem($baseButtonMinHight) 0 0 pxToRem($baseButtonMinHight);
+      }
+      &:last-child{
+        border-radius:0 pxToRem($baseButtonMinHight) pxToRem($baseButtonMinHight) 0;
+      }
+    }
+    &:active{
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      background-color:transparent;
+    }
+    &.active{
+      background: $color-primary;
+      color: #fff;
+    }
+    &:first-child{
+      border-radius: pxToRem($baseButtonHight) 0 0 pxToRem($baseButtonHight);
+    }
+    &:last-child{
+      border-radius:0 pxToRem($baseButtonHight) pxToRem($baseButtonHight) 0;
+    }
+  }
+  &.full{
+    .button {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
+  }
+}
+
+.button-box{
+  padding: pxToRem($baseSpace);
+}
+

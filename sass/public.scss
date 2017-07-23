@@ -1,0 +1,18 @@
+@import "public/reset";
+@import "base/mixin";
+@import "public/media";
+@import "module/header";
+@import "module/footer";
+@import "public/flexgrid";
+@import "public/list";
+@import "public/icon";
+@import "public/tab";
+@import "public/text";
+@import "public/form";
+@import "public/button";
+@import "public/picker";
+
+html,body{
+  height: 100%;
+  background: #f5f7fc;
+}

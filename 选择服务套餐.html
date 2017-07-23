@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>选择服务套餐</title>
+</head>
+<body>
+<section class="page-wrap choose-service">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">选择服务套餐</div>
+        </div>
+    </header>
+    <div class="service-list-box">
+        <ul id="list">
+            <li>
+                <div class="text-box">
+                    <span class="text-blue1">套餐一</span>
+                    <span class="text-blue2">价格：3666</span>
+                    <span>1.医生预约上门服务，全面体检1次。</span>
+                    <span>2.手机app使用权限完全开通。</span>
+                    <span>3.用药服务免费配送。</span>
+                    <span>4.医生定期跟踪，随访。</span>
+                    <span>5.全科医生上门诊疗10次/年。</span>
+                    <span>签约周期：<span class="text-blue">1</span> 年</span>
+                </div>
+                <input type="checkbox" value="1" />
+            </li>
+            <li>
+                <div class="text-box">
+                    <span class="text-blue1">套餐二</span>
+                    <span class="text-blue2">价格：5666</span>
+                    <span>1.医生预约上门服务，全面体检1次。</span>
+                    <span>2.手机app使用权限完全开通。</span>
+                    <span>3.用药服务免费配送。</span>
+                    <span>4.医生定期跟踪，随访。</span>
+                    <span>5.全科医生上门诊疗20次/年。</span>
+                    <span>签约周期：<span class="text-blue">1</span> 年</span>
+                </div>
+                <input type="checkbox" value="2"/>
+            </li>
+            <li>
+                <div class="text-box">
+                    <span class="text-blue1">套餐三</span>
+                    <span class="text-blue2">价格：7666</span>
+                    <span>1.医生预约上门服务，全面体检1次。</span>
+                    <span>2.手机app使用权限完全开通。</span>
+                    <span>3.用药服务免费配送。</span>
+                    <span>4.医生定期跟踪，随访。</span>
+                    <span>5.全科医生上门诊疗10次/年。</span>
+                    <span>签约周期：<span class="text-blue">3</span> 年</span>
+                </div>
+                <input type="checkbox" value="3"/>
+            </li>
+        </ul>
+    </div>
+    <div class="qd-btn-box">
+        <a class="qd-btn" href="预签约确认.html">确定</a>
+    </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    var allBox = $(":checkbox");
+    allBox.click(function () {
+        allBox.removeAttr("checked");
+        $(this).prop("checked", "checked");
+    });
+
+</script>
+</body>
+</html>

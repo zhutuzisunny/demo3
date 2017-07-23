@@ -1,0 +1,48 @@
+$baseHtmlSize:40px !default;     //��ʼHtml size�Ĵ�С
+$baseViewSize:1080px !default;   //��Ƹ���
+$baseSpace:40px !default;        //���һ�������
+
+//�����С
+$baseFontSize-lg:54px !default;
+$baseFontSize-md:48px !default;
+$baseFontSize-sm:42px !default;
+$baseFontSize-xs:36px !default;
+
+//������ɫ
+$color-text: #3d4145 !default; //�İ�ɫ
+$color-text-secondary: #5f646e !default; //�μ��İ�
+$color-text-gray: #999 !default; //��ɫ�İ�
+$color-text-gray-light: #ccc !default; //����ɫ�İ�
+
+// ��ɫ  ����bootstrap
+$color-primary:#0cb8ff !default;
+$color-success:#449d44 !default;
+$color-info:#2cb402 !default;
+$color-warning:#ec971f !default;
+$color-danger:#c9302c !default;
+$color-link:#2a6496 !default;
+
+
+// ��ɫ����
+$color-primary-darken:darken($color-primary,10%) !default;
+$color-success-darken:darken($color-success,10%) !default;
+$color-info-darken:darken($color-info,10%) !default;
+$color-warning-darken:darken($color-warning,10%) !default;
+$color-danger-darken:darken($color-danger,10%) !default;
+$color-link-darken:darken($color-link,10%) !default;
+
+// ��ɫ����䰵
+$color-primary-lighten:lighten($color-primary,10%) !default;
+$color-success-lighten:lighten($color-success,10%) !default;
+$color-info-lighten:lighten($color-info,10%) !default;
+$color-warning-lighten:lighten($color-warning,10%) !default;
+$color-danger-lighten:lighten($color-danger,10%) !default;
+$color-link-lighten:lighten($color-link,10%) !default;
+
+
+$baseBorderColor: #d8d8d8 !default;
+
+
+
+
+

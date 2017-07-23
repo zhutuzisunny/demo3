@@ -1,0 +1,37 @@
+
+$color-primary:#0cb8ff !default;
+$color-success:#449d44 !default;
+$color-info:#31b0d5 !default;
+$color-warning:#ec971f !default;
+$color-danger:#c9302c !default;
+$color-link:#2a6496 !default;
+
+.color-text{
+  color: $color-text;
+}
+
+.color-primary{
+   color: $color-primary;
+}
+.color-success{
+  color: $color-success;
+}
+
+.color-info{
+  color: $color-info;
+}
+
+.color-warring{
+  color: $color-warning;
+
+}
+
+.color-danger{
+  color: $color-danger;
+
+}
+
+.color-link{
+  color: $color-link;
+
+}

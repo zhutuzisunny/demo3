@@ -1,0 +1,855 @@
+.page-health {
+  height: 100%;
+  .container-box {
+     margin: pxToRem(30px);
+    .health-block-list {
+      > ul {
+        > li {
+          position: relative;
+        }
+        > li a {
+          height: pxToRem(440px);
+          margin: pxToRem(28px) pxToRem(18px) pxToRem(28px) pxToRem(18px);
+          display: block;
+          background: #fff;
+          border-radius: pxToRem(30px);
+          cursor: pointer;
+          -webkit-box-shadow: 0 0 8px #d0d0d0;
+          -moz-box-shadow: 0 0 8px #d0d0d0;
+          box-shadow: 0 0 8px #d0d0d0;
+          position: relative;
+          z-index: 22;
+          & .block-header {
+            height: pxToRem(23px);
+            border-radius: pxToRem(30px) pxToRem(30px) 0 0;
+            top: 0;
+            background: #8cdffb; /* Old browsers */
+            background: -moz-linear-gradient(left, #8cdffb 0%, #84caf8 41%, #7cb6f5 56%, #719cf1 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #8cdffb 0%, #84caf8 41%, #7cb6f5 56%, #719cf1 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #8cdffb 0%, #84caf8 41%, #7cb6f5 56%, #719cf1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8cdffb', endColorstr='#719cf1', GradientType=0); /* IE6-9 */
+          }
+          & .pic-out-box {
+            text-align: center;
+            display: block;
+            margin-top: pxToRem(58px);
+            > .health-icon {
+              width: pxToRem(230px);
+              height: pxToRem(200px);
+              display: inline-block;
+            }
+            > .health-icon.icon1 {
+              background: url("../images/health1.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon2 {
+              background: url("../images/health2.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon3 {
+              background: url("../images/health3.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon4 {
+              background: url("../images/health4.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon5 {
+              background: url("../images/health5.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon6 {
+              background: url("../images/health6.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon7 {
+              background: url("../images/health/icon-health-knowledge-01.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon8 {
+              background: url("../images/health/icon-health-knowledge-02.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon9 {
+              background: url("../images/health/icon-health-knowledge-03.png") no-repeat;
+              background-size: cover;
+            }
+            > .health-icon.icon10 {
+              background: url("../images/health/icon-health-knowledge-04.png") no-repeat;
+              background-size: cover;
+            }
+            > span {
+              display: block;
+              color: #333;
+              font-size: pxToRem(48px);
+              margin-top: pxToRem(12px);
+            }
+          }
+        }
+        > li .bottom-out-box {
+          margin-left: pxToRem(30px);
+          margin-right: pxToRem(30px);
+          height: pxToRem(22px);
+          margin-top: pxToRem(-30px);
+          & .bottom-shadow {
+            height: pxToRem(22px);
+            background: #fff;
+            border-radius: 0 0 pxToRem(30px) pxToRem(30px);
+            -webkit-box-shadow: 0 4px 5px -3px #d0d0d0;
+            -moz-box-shadow: 0 4px 5px -3px #d0d0d0;
+            box-shadow: 0 4px 5px -3px #d0d0d0;
+          }
+        }
+
+      }
+      &.knowledge{
+        >ul{
+          > li a{
+            & .block-header {
+              height: pxToRem(23px);
+              border-radius: pxToRem(30px) pxToRem(30px) 0 0;
+              top: 0;
+              background: #8cdffb; /* Old browsers */
+              background: -moz-linear-gradient(left, #64f1d9 0%, #a5adac 100%); /* FF3.6-15 */
+              background: -webkit-linear-gradient(left, #64f1d9 0%, #a5adac 100%); /* Chrome10-25,Safari5.1-6 */
+              background: linear-gradient(to right, #64f1d9 0%, #a5adac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#64f1d9', endColorstr='#a5adac', GradientType=0); /* IE6-9 */
+            }
+          }
+        }
+      }
+    }
+  }
+  .medical-record-box{
+    position: relative;
+    z-index: 2;
+    margin-top: pxToRem(-200px);
+  }
+  .medical-record-list{
+    padding-bottom: 1px;
+     >li{
+       margin: 0 pxToRem($baseSpace) pxToRem(30px) pxToRem($baseSpace);
+       >a{
+         color: #333;
+       }
+       .item-inner{
+         border-radius: pxToRem(18px);
+         background: #fff;
+         box-shadow: 0 0 pxToRem(16px) rgba(150,150,150,0.5);
+         padding:pxToRem(30px) 0 pxToRem(30px) pxToRem(50px);
+       }
+       .header-info{
+         position: relative;
+         padding: pxToRem(10px) 0;
+         @include hair-line-b($baseBorderColor);
+         >h4 {
+           font-size: pxToRem(42px);
+           color: #333333;
+           font-weight: normal;
+           margin-bottom: pxToRem(8px);
+           .department {
+             margin-right: pxToRem(30px);
+           }
+           .name {
+             margin-right: pxToRem(30px);
+
+           }
+         }
+         .level-info{
+           position: absolute;
+           top:50%;
+           right: pxToRem($baseSpace);
+           margin-top: pxToRem(-30px);
+           height: pxToRem(60px);
+           line-height: pxToRem(60px);
+           color:$color-warning;
+         }
+         >p{
+            font-size: pxToRem(42px);
+            color: #666666;
+            margin-bottom: pxToRem(20px);
+           &.name{
+             color: #333;
+             padding-right: pxToRem($baseSpace);
+             .why{
+               float: right;
+               color: $color-warning;
+             }
+           }
+         }
+       }
+       .footer-info{
+         padding-top: pxToRem(26px);
+         padding-right: pxToRem($baseSpace);
+        >p{
+            .label-text{
+              color: #969696;
+              font-size: pxToRem(42px);
+              margin-right: pxToRem(0px);
+            }
+            color: #000000;
+            font-size: pxToRem(42px);
+            line-height: 1.6;
+        }
+       }
+     }
+  }
+  .inspection-report-list{
+    padding-bottom: 1px;
+    >li{
+      margin: 0 pxToRem($baseSpace) pxToRem(30px) pxToRem($baseSpace);
+      >.item-inner{
+        border-radius: pxToRem(18px);
+        background: #fff;
+        box-shadow: 0 0 pxToRem(16px) rgba(150,150,150,0.5);
+       /* padding:pxToRem(30px) 0 pxToRem(30px) pxToRem(50px);*/
+      }
+      .header-info{
+        position: relative;
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        @include hair-line-b($baseBorderColor);
+        font-size: pxToRem(42px);
+        .time{
+          color: #00a4fa;
+        }
+      }
+
+    }
+    .default-list{
+      >li{
+        .item-inner{
+          margin-left: 0;
+          padding: pxToRem(20px) pxToRem($baseSpace);
+        }
+        .item-content{
+          >h4{
+            font-size: pxToRem(42px);
+            color: #333333;
+            font-weight: normal;
+            margin-bottom: pxToRem(6px);
+          }
+          >p{
+            font-size: pxToRem(42px);
+            color: #666666;
+            >label{
+              padding-right: pxToRem(10px);
+              color: #969696;
+            }
+          }
+        }
+      }
+    }
+  }
+  .medication-list{
+    padding-bottom: 1px;
+    >li{
+      margin: 0 pxToRem($baseSpace) pxToRem(30px) pxToRem($baseSpace);
+      .item-inners{
+        border-radius: pxToRem(18px);
+        background: #fff;
+        box-shadow: 0 0 pxToRem(16px) rgba(150,150,150,0.5);
+      }
+      .header-info{
+        position: relative;
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        @include hair-line-b($baseBorderColor);
+        font-size: pxToRem(42px);
+        @include flex-box();
+        .name{
+          color: #333;
+          flex: 1;
+          overflow: hidden;
+          white-space: normal;
+          text-overflow: ellipsis;
+        }
+        .time{
+          color: #999;
+        }
+      }
+      .default-list{
+        .item-inner{
+          padding-top: pxToRem(20px);
+          padding-bottom: pxToRem(20px);
+        }
+        .item-media{
+          position: absolute;
+          top:pxToRem(20px);
+          bottom:pxToRem(20px);
+          height: 100%;
+          color: #969696;
+          font-size: pxToRem(42px);
+          align-items: flex-start;
+          justify-content: flex-start;
+          line-height: pxToRem(72px);
+
+        }
+        .item-content{
+          padding-left: pxToRem(130px);
+          >p{
+            font-size: pxToRem(42px);
+            line-height: pxToRem(72px);
+          }
+        }
+      }
+    }
+  }
+  .jzjl-top-box{
+      background: url("../images/health/health-jzjl-banner.png") no-repeat;
+      background-size: cover;
+      height: pxToRem(464px);
+      .banner-img{
+        width: 100%;
+      }
+      .header-box{
+
+        .header-content{
+          background: none;
+          transition: all 0.5s;
+        }
+        &.active{
+          .header-content{
+            background: #0dbbff;
+          }
+        }
+
+      }
+  }
+
+  .report-basic-info{
+    position: relative;
+    background: #fff;
+    margin-bottom: pxToRem(24px);
+    padding: pxToRem(24px) pxToRem($baseSpace);
+    .base-info{
+      position: relative;
+      margin-left: pxToRem(-$baseSpace);
+      margin-right: pxToRem(-$baseSpace);
+      padding: 0 pxToRem($baseSpace) pxToRem(24px) pxToRem($baseSpace);
+      @include hair-line-b($baseBorderColor);
+      margin-bottom: pxToRem(24px);
+    }
+    .name{
+      font-weight: normal;
+      font-size: pxToRem(42px);
+      color: #333;
+      margin-bottom: pxToRem(9px);
+    }
+    .time{
+      font-size: pxToRem(36px);
+      color: #999;
+    }
+    .why-span{
+      position: absolute;
+      right: pxToRem($baseSpace);
+      top:50%;
+      margin-top: pxToRem(-60px);
+      font-size: pxToRem(42px);
+      height: pxToRem(80px);
+      line-height: pxToRem(80px);
+      color: $color-warning;
+    }
+    .info-title{
+      margin-bottom: pxToRem(12px);
+      font-weight: bold;
+    }
+    .p-text{
+      font-size: pxToRem(42px);
+      color: #333;
+      line-height: pxToRem(72px);
+      .label-text{
+        color: #999;
+      }
+    }
+    .drugs-list{
+      >li{
+        position: relative;
+        padding: pxToRem(30px) 0;
+        @include hair-line-b($baseBorderColor);
+        &:last-child{
+          &:after{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .report-result-box-jy{
+    background: #fff;
+  }
+  .report-result-table{
+    width: 100%;
+    text-align: left;
+    th{
+      height: pxToRem(90px);
+      line-height: pxToRem(90px);
+     /* background: #f7f7f7;*/
+      border-bottom: 1px solid #eee;
+      padding: 0 pxToRem($baseSpace);
+      font-weight: normal;
+      font-size: pxToRem(42px);
+      color: #333;
+    }
+    td{
+      padding: pxToRem(20px) pxToRem($baseSpace);
+    }
+    .icon-down{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: pxToRem(12px);
+      margin-top: pxToRem(-6px);
+      height: pxToRem(40px);
+      width: pxToRem(40px);
+      background: url("../images/icon-down-g.png") no-repeat;
+      background-size: cover;
+    }
+    .icon-top{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: pxToRem(12px);
+      margin-top: pxToRem(-6px);
+      height: pxToRem(40px);
+      width: pxToRem(40px);
+      background: url("../images/icon-up-r.png") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  //健康评测
+  .health-assessment-list{
+    >li{
+      .item-inner{
+        padding: pxToRem(30px) 0;
+        .item-media{
+            width: pxToRem(300px);
+            height: pxToRem(200px);
+            background: #f1f1f1;
+            border-radius: pxToRem(18px);
+            @include flex-box();
+            justify-content: center;
+            align-items: center;
+        }
+        .item-content{
+          padding-right: pxToRem($baseSpace);
+          >h4{
+            font-size: pxToRem(48px);
+            font-weight: normal;
+            margin-bottom: pxToRem(12px);
+          }
+          >p{
+            white-space: normal;
+            font-size: pxToRem(42px);
+            height: pxToRem(132px);
+            line-height: pxToRem(66px);
+            @include text-ellipsis-m(2);
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  //问卷调查
+  .survey-box{
+    .panel-heading{
+      display: none;
+      >h3{
+        text-align: center;
+      }
+    }
+    .panel-body{
+      padding: 0;
+    }
+    .progress{
+      display: none;
+    }
+    .my-question{
+      background: #fff;
+      margin-bottom: pxToRem(24px);
+      font-size: pxToRem(42px);
+      h5{
+        font-size: pxToRem(48px);
+        position: relative;
+        @include hair-line-b($baseBorderColor);
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        font-weight: normal;
+      }
+      .form-inline{
+         padding: 0 pxToRem($baseSpace);
+         >.radio{
+            position: relative;
+            line-height: pxToRem(72px);
+           @include hair-line-b($baseBorderColor);
+           >label{
+             display: block;
+             padding: pxToRem(30px) 0;
+           }
+           &:last-child{
+              &:after{
+                display: none;
+              }
+           }
+         }
+
+      }
+      .form-control{
+        display: block;
+        height: pxToRem(120px);
+        width: 90%;
+        border: 1px solid #ddd;
+        margin: pxToRem(30px) pxToRem($baseSpace);
+        padding-left: pxToRem(30px);
+        &:focus{
+          outline: none;
+          border: 1px solid $color-primary;
+        }
+      }
+    }
+    .form-inline{
+      font-size: pxToRem(42px);
+      .radio{
+          input[type="radio"]{
+            position: relative;
+            @include appearance;
+            width: pxToRem(56px);
+            height: pxToRem(56px);
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: pxToRem(16px);
+            &:focus{
+              outline: none;
+            }
+            &:after{
+              content: '';
+            }
+            &:checked{
+              background: none;
+              &:after{
+                position: absolute;
+                display: block;
+                left: 16%;
+                top: 16%;
+                width: 68%;
+                height: 68%;
+                border-radius: 50%;
+                background-color: $color-primary;
+              }
+            }
+          }
+      }
+    }
+    .panel-footer{
+     padding: pxToRem(30px) pxToRem($baseSpace);
+      .button{
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  .survey-result-box{
+    padding:pxToRem(30px) pxToRem($baseSpace);
+    >p{
+      font-size: pxToRem(42px);
+      line-height: pxToRem(72px);
+    }
+  }
+
+  //附近的药店
+  .map-box{
+    height: pxToRem(600px);
+  }
+  .near-pharmacy-list{
+    >li{
+      .item-inner{
+        padding-top: pxToRem(30px);
+        padding-bottom: pxToRem(30px);
+        align-items: flex-start;
+        .item-media{
+          padding-top: pxToRem(15px);
+          .number{
+            width: pxToRem(42px);
+            height: pxToRem(42px);
+            text-align: center;
+            line-height: pxToRem(42px);
+            font-size: pxToRem(36px);
+            color: #fff;
+            background: #ccc;
+            border-radius: pxToRem(9px);
+            background: $color-primary;
+            font-style: normal;
+            /* &.one{
+                 background-color:#ff0000 ;
+             }
+             &.two{
+               background-color:#ff0000 ;
+             }
+             &.three{
+               background-color:#ff0000 ;
+             }*/
+          }
+        }
+
+        .item-content{
+          >h4{
+            font-weight: normal;
+            font-size: pxToRem(42px);
+            color: #333;
+          }
+          >p{
+            font-weight: normal;
+            font-size: pxToRem(36px);
+            color: #999;
+          }
+        }
+        .item-right{
+          padding-top: pxToRem(20px);
+          .icon{
+            display: inline-block;
+            vertical-align: middle;
+            width: pxToRem(69px);
+            height: pxToRem(69px);
+          }
+          .icon-phone{
+            background: url("../images/health/icon-map-phone.png") no-repeat;
+            background-size: cover;
+          }
+          .icon-navigation{
+            background: url("../images/health/icon-map-dh.png") no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+
+    }
+  }
+
+  //疾病详情
+  .disease-details{
+    >li{
+      position: relative;
+      padding: pxToRem(30px) pxToRem($baseSpace);
+      font-size: pxToRem(42px);
+      @include hair-line-b($baseBorderColor);
+      >h4{
+        font-weight: bold;
+        margin-bottom: pxToRem(18px);
+      }
+      >p{
+        line-height: 1.5;
+      }
+    }
+  }
+
+
+}
+
+
+.page-body-disease{
+  @include flex-box();
+  flex-direction:column;
+  background: url("../images/health/body-bg.png") repeat;
+  .body-disease-box{
+    flex: 1;
+    @include flex-box();
+    flex-direction:row;
+    background: #fff;
+  }
+  .disease-left,
+  .disease-right{
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+
+  }
+  .disease-left{
+    background: #f1f1f1;
+  }
+  .body-left-list{
+    >li{
+      >a{
+        position: relative;
+        display: block;
+        font-size: pxToRem(42px);
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        white-space: nowrap;
+        color: #333;
+      }
+      &.active{
+        >a{
+          background: #fff;
+          &:after{
+            position: absolute;
+            left: 0;
+            top:10%;
+            display: block;
+            content: "";
+            width: 2px;
+            height: 80%;
+            background: $color-primary;
+            overflow: hidden;
+            z-index:2;
+          }
+        }
+
+      }
+    }
+  }
+  .body-right-list{
+    >li {
+      > a {
+        position: relative;
+        display: block;
+        font-size: pxToRem(42px);
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        white-space: nowrap;
+        color: #333;
+      }
+    }
+  }
+
+  .body-img-box{
+    position: relative;
+    flex: 1;
+   .people-img-box{
+     display: none;
+     position: absolute;
+     text-align: center;
+     width: 100%;
+     height: 86%;
+     top:7%;
+     transition: all 0.5s;
+     &.active{
+      display: block;
+     }
+      >img{
+        display: block;
+        margin: 0 auto;
+        max-height: 100%;
+      }
+   }
+
+    .button-tool{
+      display: block;
+      width: pxToRem(120px);
+      height: pxToRem(120px);
+      vertical-align: middle;
+    }
+    .icon-men-btn{
+      background: url("../images/health/icon-men-btn.png") no-repeat;
+      background-size:cover;
+    }
+    .icon-record-btn{
+      background: url("../images/health/icon-record-btn.png") no-repeat;
+      background-size:cover;
+    }
+    .icon-women-btn{
+      background: url("../images/health/icon-women-btn.png") no-repeat;
+      background-size:cover;
+    }
+    .left-tool{
+      position: absolute;
+      left: pxToRem($baseSpace);
+      top: pxToRem($baseSpace);
+      z-index: 2;
+      .button-tool{
+        margin-bottom: pxToRem(40px);
+      }
+    }
+    .right-tool{
+      position: absolute;
+      right: pxToRem($baseSpace);
+      bottom: pxToRem($baseSpace);
+      z-index: 2;
+    }
+
+    .svg-style-box{
+      position: absolute;
+      top:0;
+      left: 50%;
+      height: 100%;
+      margin: 0 auto;
+      transform:translateX(-50%) ;
+      z-index: 2;
+      &.gir{
+        margin-top: pxToRem(-20px);
+      }
+      .st0{opacity:0;fill-rule:evenodd;clip-rule:evenodd;fill:#329BE4;}
+      .st0:hover,
+      .st0:focus{
+        opacity:0.3;
+      }
+      .st0.active{
+        opacity:0.3;
+      }
+    }
+  }
+
+}
+
+.card-nav-tab{
+  width: 100%;
+  margin-bottom: pxToRem(40px);
+  padding-top: pxToRem(10px);
+  .tab-list{
+    @include flex-box();
+    padding:0 pxToRem($baseSpace/2);
+    >li{
+      padding:0 pxToRem($baseSpace/3);
+      &:nth-child(1){
+        width: 24%;
+      }
+      &:nth-child(2){
+        width: 30%;
+      }
+      &:nth-child(3){
+        width: 24%;
+      }
+      &:nth-child(4){
+        width: 22%;
+      }
+      >a{
+        display: block;
+        height: pxToRem(60px);
+        color: #00f6ff;
+        font-size: pxToRem(36px);
+        border: 1px solid #00f1fa;
+        line-height: pxToRem(58px);
+        text-align: center;
+        background: rgba(0,0,0,.1);
+        border-radius: pxToRem(30px);
+        .icon-more{
+          display: inline-block;
+          vertical-align: middle;
+          margin-top: pxToRem(-6px);
+          margin-left: pxToRem(6px);
+          transform: rotate(90deg);
+          font-size: pxToRem(30px);
+        }
+      }
+      &.active{
+        >a{
+          background: #0664a7;
+          border-color:#0664a7;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

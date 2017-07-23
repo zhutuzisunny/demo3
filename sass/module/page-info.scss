@@ -1,0 +1,314 @@
+$color-default:#b1cdff;
+
+.page-info{
+  &.page-msg{
+    background: #fff;
+    height: 100%;
+  }
+  //在线咨询
+  .user-box{
+     position:relative;
+     height:pxToRem(150px);
+     line-height:pxToRem(150px);
+     background:#fff;
+     padding:0 pxToRem(33px) 0 pxToRem(44px);
+     .row{
+       display: inline-block;
+       font-size:pxToRem(42px);
+       color:#000;
+       &.left-con{
+           float:left;
+       }
+       &.right-con{
+         float:right;
+       }
+       .span-text{
+         margin-right:pxToRem(40px);
+       }
+       .sex-box{
+         display: inline-block;
+         width:pxToRem(180px);
+         line-height:pxToRem(70px);
+         .default-sex{
+           display: inline-block;
+           width:50%;
+           text-align: center;
+           color:#088aec;
+           border:1px solid #898989;
+           &.active{
+             color:#fff;
+             background:#088aec;
+             border:1px solid #088aec;
+           }
+           &:first-child{
+             border-right:none;
+             border-top-left-radius:pxToRem(8px);
+             border-bottom-left-radius:pxToRem(8px);
+           }
+           &:last-child{
+             border-left:none;
+             border-top-right-radius:pxToRem(8px);
+             border-bottom-right-radius:pxToRem(8px);
+           }
+         }
+       }
+       .user-age{
+         display: inline-block;
+         width:pxToRem(180px);
+         line-height:pxToRem(70px);
+         font-size:pxToRem(42px);
+         border:1px solid #898989;
+         border-radius: pxToRem(8px);
+         input{
+          padding:pxToRem(4px) 0;
+           width:100%;
+           height:98%;
+           text-align: center;
+           border:none;outline: none;
+         }
+       }
+     }
+    &.next{
+      margin-top:pxToRem(20px);
+      @include hair-line-b($baseBorderColor);
+    }
+  }
+  .area-box{
+    background:#fff;
+    height:pxToRem(480px);
+    .txt{
+      padding-left:pxToRem(43px);
+      padding-top:pxToRem(40px);
+      width:100%;
+      height:100%;
+      border:none;
+      outline: none;
+      resize: none;
+
+    }
+  }
+  .poster-box{
+    padding-left:pxToRem(44px);
+    background:#fff;
+    margin-top:pxToRem(20px);
+    height:pxToRem(210px);
+    line-height:pxToRem(210px);
+    .add-img{
+      position:relative;
+      display: inline-block;
+      vertical-align: middle;
+      width:pxToRem(150px);
+      height:pxToRem(150px);
+      background:url("../images/info/add.png") no-repeat;
+      background-size:100% 100%;
+    }
+    .poster-text{
+      margin-left:pxToRem(60px);
+      display: inline-block;
+      width:pxToRem(700px);
+      font-size:pxToRem(36px);
+      white-space: nowrap;
+      color:#8e8e8e;
+    }
+  }
+  .btn{
+    margin:pxToRem(40px) auto;
+    display: block;
+    background:#0dbbff;
+    width:88%;
+    height:pxToRem(130px);
+    line-height:pxToRem(130px);
+    font-size:pxToRem(48px);
+    color:#fff;
+    text-align: center;
+    border-radius:pxToRem(16px);
+  }
+  //END
+
+  //详情
+  .enter-box{
+     height:pxToRem(160px);
+    /* background:#eee;*/
+    .container{
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height:pxToRem(160px);
+      background:#eee;
+      padding:0 pxToRem($baseSpace);
+      @include hair-line-t($baseBorderColor);
+
+    .align-box{
+       position:relative;
+        width: 100%;
+      @include flex-box;
+      padding-top: pxToRem(30px);
+    }
+    .input-box{
+      flex: 1;
+      height:pxToRem(100px);
+      background:#fff;
+
+      input{
+        padding-left: pxToRem(20px);
+        width:100%;
+        height:100%;
+        border:none;
+      }
+    }
+    .smile-box{
+        display: inline-block;
+      .icon-smile{
+        display: inline-block;
+        vertical-align: middle;
+        width:pxToRem(102px);
+        height:pxToRem(102px);
+        margin-left:pxToRem(20px);
+        &:before{
+          display: none;
+        }
+        &.smile{
+          background:url("../images/info/info-smile.png") no-repeat;
+          background-size:100% 100%;
+        }
+        &.add{
+          background:url("../images/info/info-add.png") no-repeat;
+          background-size:100% 100%;
+        }
+      }
+
+    }
+  }
+  }
+
+
+}
+/*聊天内容*/
+.talk-list-box{
+  padding: 0 pxToRem($baseSpace);
+  background:#fff;
+  & .talk-list{
+    padding: pxToRem(30px) 0;
+    &>li{
+      position: relative;
+      margin-bottom:pxToRem(30px);
+      &:after{
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+    }
+    & .img-wrap{
+      position: absolute;
+      left: 0;
+      top:0;
+      width: pxToRem(157px);
+      height: pxToRem(157px);
+      border-radius: 50%;
+      margin-right: pxToRem(40px);
+      & img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    & .text-wrap{
+      position: relative;
+      padding: pxToRem(22px) 0;
+      margin-left:pxToRem(197px);
+      & .talk-content{
+        display: inline-block;
+        border: 1px solid $color-default;
+        color: #000000;
+        font-size: pxToRem($baseFontSize-sm);
+        padding: pxToRem(20px);
+        margin-right: pxToRem(100px);
+        border-radius: pxToRem(18px);
+        .arrow{
+          position: absolute;
+          left: -8px;
+          top:22px;
+          overflow: hidden;
+          width: 10px;
+          height: 10px;
+          &:after{
+            position:absolute;
+            content:"\00a0";
+            display: block;
+            right:-5px;
+            top:0;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $color-default;
+            background: #fff;
+            transform:rotate(45deg);
+            -webkit-transform:rotate(45deg);
+          }
+        }
+
+      }
+    }
+    &>li.me{
+      & .img-wrap{
+        position: absolute;
+        left: auto;
+        right:0;
+        top:0;
+        width: pxToRem(157px);
+        height: pxToRem(157px);
+        border-radius: 50%;
+        margin-right: pxToRem(0px);
+        & img{
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      & .text-wrap{
+        position: relative;
+        padding: pxToRem(22px) 0;
+        margin-right:pxToRem(167px);
+        margin-left: 0;
+        text-align: right;
+        & .talk-content{
+          position: relative;
+          display: inline-block;
+          text-align: left;
+          border: 1px solid $color-default;
+          color: #fff;
+          font-size: pxToRem($baseFontSize-sm);
+          padding: pxToRem(20px);
+          margin-right: pxToRem(30px);
+          border-radius: pxToRem(18px);
+          background: $color-default;
+          .arrow{
+            position: absolute;
+            left: auto;
+            right: -8px;
+            top:13px;
+            overflow: hidden;
+            width: 10px;
+            height: 10px;
+            &:after{
+              position:absolute;
+              content:"\00a0";
+              display: block;
+              right:auto;
+              left: -5px;
+              top:0;
+              width: 10px;
+              height: 10px;
+              border: 1px solid $color-default;
+              background: $color-default;
+            }
+          }
+        }
+      }
+    }
+  }
+}

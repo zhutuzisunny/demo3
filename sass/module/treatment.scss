@@ -1,0 +1,467 @@
+.page-treatment{
+
+  .hospital-top-info{
+      position: relative;
+     background: #fff;
+     .img-response{
+        width: 100%;
+        max-width:inherit;
+     }
+    .text-wrap{
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom:0;
+        height: pxToRem(80px);
+        padding: 0 pxToRem($baseSpace);
+        background: rgba(0,0,0,0.5);
+        @include flex-box();
+        .name{
+          flex: 1;
+          overflow: hidden;
+          white-space: normal;
+          text-overflow: ellipsis;
+            line-height: pxToRem(80px);
+            font-size: pxToRem(42px);
+            color: #fff;
+        }
+        .leave{
+            height: pxToRem(80px);
+            line-height: pxToRem(80px);
+            font-size: pxToRem(36px);
+            color: #f89e00;
+          margin-right: pxToRem(20px);
+        }
+        .typeof{
+            display: inline-block;
+           vertical-align: middle;
+            height: pxToRem(44px);
+            line-height: pxToRem(42px);
+            border-radius: pxToRem(21px);
+            border: 1px solid #adadaa;
+            padding:0 pxToRem(20px);
+            font-size: pxToRem(32px);
+            color: #b4b4b4;
+            margin-top: pxToRem(16px);
+        }
+    }
+  }
+
+  .hospital-top-text{
+     position: relative;
+     padding: pxToRem(20px) pxToRem($baseSpace);
+     @include hair-line-b($baseBorderColor);
+     font-size: pxToRem(42px);
+     background: #fff;
+    >p{
+      line-height: pxToRem(70px);
+    }
+    .icon{
+        display: inline-block;
+        vertical-align: middle;
+        width: pxToRem(48px);
+        height: pxToRem(48px);
+        margin-right: pxToRem(16px);
+        margin-top: pxToRem(-6px);
+    }
+    .icon-map{
+        background: url("../images/teatment/icon-map-grey.png") no-repeat;
+        background-size: cover;
+    }
+    .icon-phone{
+      background: url("../images/teatment/icon-phone-grey.png") no-repeat;
+      background-size: cover;
+    }
+    .address{
+      color: #333333;
+    }
+    .phone{
+      color: #999999;
+    }
+    .change-a{
+      position: absolute;
+      right:pxToRem($baseSpace);
+      top:50%;
+      margin-top: pxToRem(-27px);
+      display: block;
+      height: pxToRem(54px);
+      line-height: pxToRem(54px);
+      font-size: pxToRem(36px);
+      color: #999;
+      .iconfont{
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: pxToRem(-6px);
+      }
+    }
+  }
+
+  .treatment-nav-tool{
+    position: relative;
+    padding: pxToRem(30px) 0;
+    margin-bottom: pxToRem(16px);
+    background: #fff;
+    @include hair-line-b($baseBorderColor);
+    .item{
+        color: #006ad7;
+        .icon{
+          display: block;
+          margin: 0 auto;
+          width: pxToRem(120px);
+          height: pxToRem(120px);
+        }
+        .span-text{
+          display: block;
+          text-align: center;
+          font-size: pxToRem(36px);
+        }
+        .icon-jz-hzxx{
+          background: url("../images/teatment/icon-jz-hzxx.png") no-repeat;
+          background-size:cover;
+        }
+        .icon-jz-ssjl{
+          background: url("../images/teatment/icon-jz-ssjl.png") no-repeat;
+          background-size:cover;
+        }
+        .icon-jz-xsjf{
+          background: url("../images/teatment/icon-jz-xsjf.png") no-repeat;
+          background-size:cover;
+        }
+        .icon-jz-yygh{
+          background: url("../images/teatment/icon-jz-yygh.png") no-repeat;
+          background-size:cover;
+        }
+    }
+  }
+  .hospital-list-box{
+    position: relative;
+    background: #fff;
+    margin-bottom: pxToRem(16px);
+    @include hair-line-t($baseBorderColor);
+    @include hair-line-b($baseBorderColor);
+    .default-list{
+      >li{
+        .item-inner{
+          margin-left: 0;
+          padding-left: pxToRem($baseSpace);
+          .item-center{
+            padding: pxToRem(26px) 0;
+          }
+        }
+        .name{
+          font-weight: normal;
+          font-size: pxToRem(42px);
+          color: #333333;
+        }
+        .text{
+          font-size: pxToRem(36px);
+          color: #969696;
+        }
+      }
+    }
+  }
+
+
+  .waiting-for-list{
+     >li{
+       background: #fff;
+       margin-bottom: pxToRem(20px);
+     }
+    .content-info{
+      @include flex-box();
+      padding:pxToRem(50px) pxToRem($baseSpace) pxToRem(30px) pxToRem($baseSpace);
+      .img-wrap{
+        width: pxToRem(121px);
+        height: pxToRem(121px);
+        border-radius: 50%;
+        margin-right: pxToRem(30px);
+      }
+      .text-wrap{
+        flex: 1;
+        >h4{
+          height: pxToRem(70px);
+          line-height: pxToRem(70px);
+          font-weight: normal;
+          color: #333333;
+          margin-bottom: pxToRem(12px);
+          .default-span{
+            font-size: pxToRem(48px);
+            margin-right: pxToRem(18px);
+          }
+          .genre-span{
+            float: right;
+            font-size: pxToRem(44px);
+            color: #fc9400;
+          }
+        }
+        .hospital-name,
+        .p-time{
+          color: #969696;
+          line-height: pxToRem(72px);
+          font-size: pxToRem(42px);
+        }
+        .hospital-name{
+          font-size: pxToRem(48px);
+        }
+      }
+    }
+    .other-info{
+      position: relative;
+      height: pxToRem(130px);
+      line-height: pxToRem(130px);
+      padding:0 pxToRem($baseSpace);
+      @include hair-line-t($baseBorderColor);
+      .queue-time{
+          color: #666666;
+          font-size: pxToRem(42px);
+          >strong{
+            font-size: pxToRem(44px);
+            font-weight: normal;
+          }
+      }
+      .queue-number{
+        float: right;
+        color: #666666;
+        font-size: pxToRem(42px);
+        @include flex-box();
+        align-items: center;
+        >label{
+          display: inline-block;
+          vertical-align: middle;
+          width: pxToRem(96px);
+          height: pxToRem(51px);
+          line-height: pxToRem(51px);
+          background: url("../images/teatment/icon-waiting-tooltip.png") no-repeat;
+          background-size: cover;
+          color: #fc9400;
+          font-size: pxToRem(32px);
+          text-align: center;
+          padding-right: pxToRem(12px);
+          margin-right: pxToRem(10px);
+
+        }
+        >strong{
+          display: inline-block;
+          vertical-align: middle;
+          text-align: right;
+          width: pxToRem(90px);
+          color: #06a2ff;
+          font-size: pxToRem(50px);
+          font-weight: normal;
+        }
+        .until{
+          display: inline-block;
+          vertical-align: middle;
+          color: #afafaf;
+          font-size: pxToRem(42px);
+          font-style: normal;
+        }
+      }
+
+    }
+  }
+
+  .payment-list{
+     background: #fff;
+     >li{
+       .item-inner{
+         margin-left: 0;
+         padding-left: pxToRem($baseSpace);
+         -webkit-box-align: flex-start;
+         -webkit-align-items: flex-start;
+         align-items:flex-start;
+       }
+       .text-wrap{
+         padding: pxToRem(30px) 0;
+         >h4{
+           font-size: pxToRem(48px);
+           color: #333333;
+           margin-bottom: pxToRem(12px);
+           font-weight: normal;
+           .money{
+              color:$color-warning;
+             padding-right: pxToRem(10px);
+           }
+           .until{
+            color: #969696;
+           }
+         }
+         >p{
+           font-size: pxToRem(42px);
+           color: #969696;
+           line-height: pxToRem(64px);
+           .default-span{
+             margin-right: pxToRem(30px);
+           }
+         }
+       }
+       .tool-btn{
+         margin-top: pxToRem(30px);
+       }
+     }
+  }
+
+  .pay-way-list{
+     background: #fff;
+     >li{
+       .item-inner{
+         padding-top: pxToRem(30px);
+         padding-bottom: pxToRem(30px);
+         .item-media{
+           width: pxToRem(140px);
+         }
+         .item-content{
+           >h4{
+              font-size: pxToRem(48px);
+             color: #000000;
+           }
+           >p{
+             font-size: pxToRem(36px);
+             color: #969696;
+           }
+         }
+       }
+     }
+   }
+
+  .pay-drug-charges{
+    background: #fff;
+    margin-bottom: pxToRem(30px);
+    .header-title{
+        position: relative;
+        height: pxToRem(138px);
+        @include hair-line-b($baseBorderColor);
+        @include flex-box();
+        align-items: center;
+        padding: 0 pxToRem($baseSpace);
+        .name{
+           flex: 1;
+           color: #333333;
+           font-size: pxToRem(48px);
+        }
+        .right-tool{
+            >span{
+              color: #969696;
+              font-size: pxToRem(36px);
+              margin-left: pxToRem(16px);
+            }
+        }
+    }
+    .drug-list{
+      >li{
+        .item-content{
+          font-size: pxToRem(42px);
+        }
+        .item-after{
+          font-size: pxToRem(42px);
+          .number{
+            font-size: pxToRem(44px);
+          }
+        }
+
+      }
+    }
+    .footer-all-price{
+      position: relative;
+      height: pxToRem(160px);
+      @include hair-line-t($baseBorderColor);
+      font-size: pxToRem(42px);
+      color: #969696;
+      @include flex-box();
+      align-items: center;
+      padding:0 pxToRem($baseSpace);
+      justify-content: flex-end;
+      >span{
+        margin-right: pxToRem(16px);
+      }
+      .money{
+        font-weight: normal;
+        font-size: pxToRem(50px);
+        color: #fc9400;
+      }
+    }
+  }
+
+  .pay-details-mod{
+    background: #fff;
+    .title{
+        font-size: pxToRem(42px);
+        padding:pxToRem(30px) pxToRem($baseSpace);
+        color: #666666;
+        font-weight: normal;
+        .icon-money{
+            width: pxToRem(50px);
+            height: pxToRem(50px);
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: pxToRem(12px);
+          margin-top: pxToRem(-6px);
+          background: url("../images/teatment/icon-pay-money.png") no-repeat;
+          background-size: cover;
+        }
+    }
+    .pay-details-list{
+      padding:0 pxToRem(66px) pxToRem(40px) pxToRem(66px);
+      >li{
+          color: #969696;
+          font-size: pxToRem(42px);
+          line-height: pxToRem(72px);
+          padding:0 pxToRem($baseSpace);
+          white-space: nowrap;
+          .money{
+            font-size: pxToRem(44px);
+            color: #333333;
+            >strong{
+              padding-left: pxToRem(10px);
+              font-weight: normal;
+            }
+          }
+      }
+    }
+  }
+
+  .chang-payway-box{
+      margin-bottom: pxToRem(20px);
+    .title{
+        color: #969696;
+        font-weight: normal;
+        height: pxToRem(96px);
+        line-height: pxToRem(96px);
+        padding-left: pxToRem($baseSpace);
+        padding-right: pxToRem($baseSpace);
+    }
+  }
+
+  .pay-sure-info{
+      background: #06a2ff;
+      color: #fff;
+      padding:pxToRem(30px) pxToRem($baseSpace);
+      >h4{
+        font-weight: normal;
+        margin-bottom: pxToRem(12px);
+        >span{
+          margin-right: pxToRem(20px);
+          font-size: pxToRem(36px);
+        }
+        .name{
+          font-size: pxToRem(42px);
+        }
+      }
+      >p{
+          font-size: pxToRem(36px);
+          line-height: pxToRem(60px);
+      }
+  }
+
+  .report-list{
+    >li{
+      .item-right{
+        font-size: pxToRem(36px);
+        color: #999;
+      }
+    }
+  }
+
+
+
+}

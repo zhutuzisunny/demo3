@@ -1,0 +1,224 @@
+.page-family{
+  .family-list-box{
+     padding:pxToRem(36px) pxToRem($baseSpace);
+     .default-list{
+       >li{
+         background: #fff;
+         margin-bottom: pxToRem(36px);
+         &:last-child{
+           margin-bottom: 0;
+         }
+         .item-inner{
+           padding-top:pxToRem(36px);
+           padding-bottom:pxToRem(36px);
+           &:after{
+             display: none;
+           }
+         }
+       }
+     }
+     .img-wrap{
+       width: pxToRem(140px);
+       height: pxToRem(140px);
+       border-radius: 50%;
+       overflow: hidden;
+     }
+     .text-wrap{
+        >h4{
+            font-weight: normal;
+            margin-bottom: pxToRem(16px);
+           .name{
+              font-size: pxToRem(42px);
+              color: #000000;
+           }
+          .relation{
+              float: right;
+              color: #000000;
+              .icon-edite{
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: pxToRem(30px);
+                width:pxToRem(46px);
+                height: pxToRem(46px);
+                background: url("../images/family/icon-edite.png") no-repeat;
+                background-size: cover;
+                margin-top: pxToRem(-6px);
+              }
+          }
+        }
+        >p{
+          color: #000000;
+          line-height: 100%;
+           .phone{
+              font-size: pxToRem(36px);
+           }
+          .default-text{
+            color: #087cff;
+            font-size: pxToRem(36px);
+            float: right;
+          }
+        }
+     }
+  }
+
+  .family-info-box{
+     .plane-header{
+       position: relative;
+       padding: pxToRem(20px) pxToRem($baseSpace);
+       @include hair-line-b($baseBorderColor);
+       .name{
+         font-size: pxToRem(36px);
+         color: #000000;
+       }
+       .right-tool{
+          position: absolute;
+          top:pxToRem(20px);
+          bottom:pxToRem(20px);
+          right: pxToRem($baseSpace);
+          .tool-a{
+            font-size: pxToRem(36px);
+            color: #000000;
+          }
+         .icon{
+           display: inline-block;
+           vertical-align: middle;
+           width: pxToRem(35px);
+           height: pxToRem(35px);
+           line-height: pxToRem(35px);
+           margin-left: pxToRem(16px);
+           margin-top: pxToRem(-4px);
+         }
+         .icon-add{
+            background: url("../images/family/icon-add.png") no-repeat;
+            background-size: cover;
+           font-weight: bold;
+         }
+         .icon-more{
+           color: #adadad;
+         }
+         .icon-edite{
+           background: url("../images/family/icon-edite.png") no-repeat;
+           background-size: cover;
+         }
+
+       }
+
+     }
+  }
+
+  .base-info-box{
+    position: relative;
+    @include hair-line-b($baseBorderColor);
+    .default-list{
+      >li{
+         .item-inner{
+           padding: pxToRem(30px) 0;
+         }
+         .img-wrap{
+           border-radius: 50%;
+           width: pxToRem(140px);
+           height: pxToRem(140px);
+           overflow: hidden;
+         }
+         .item-content{
+           padding-left: pxToRem(10px);
+            >h4{
+              font-weight: normal;
+              font-size: pxToRem(42px);
+              color: #666666;
+            }
+            >p{
+              font-size: pxToRem(36px);
+              color: #666666;
+              >span{
+                margin-right: pxToRem(30px);
+              }
+            }
+           .year{
+
+           }
+           .height{
+
+           }
+           .weight{
+
+           }
+         }
+      }
+    }
+  }
+
+  .real-name-info{
+    padding: pxToRem($baseSpace);
+    >p{
+      font-size: pxToRem(36px);
+      color: #666;
+    }
+  }
+
+  .treatment-card-list{
+     >li{
+       .item-inner{
+          margin-left:0;
+          padding-left: pxToRem($baseSpace);
+          padding-top: pxToRem(24px);
+          padding-bottom: pxToRem(24px);
+         .item-media{
+           align-items: flex-start;
+         }
+
+         .item-content{
+
+          }
+       }
+     }
+     .img-wrap{
+        width: pxToRem(122px);
+        height: pxToRem(90px);
+     }
+    .name{
+        font-weight: normal;
+        font-size: pxToRem(42px);
+        color: #666666;
+    }
+    .number{
+      font-size: pxToRem(36px);
+      color: #666666;
+    }
+    .state-text{
+      color: $color-primary;
+    }
+  }
+
+
+  .form-list{
+     >li{
+       .item-inner{
+         margin-left: 0;
+         padding-left: pxToRem($baseSpace);
+         .item-content{
+
+         }
+       }
+       .input-text{
+         background: #fff;
+         border: 0;
+         text-align: right;
+         @include appearance();
+       }
+     }
+  }
+
+
+  .family-plane{
+      .header-pic{
+        width: pxToRem(90px);
+        height: pxToRem(90px);
+        border-radius: 50%;
+        margin-right: pxToRem(20px);
+      }
+  }
+
+
+
+}

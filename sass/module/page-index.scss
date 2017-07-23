@@ -1,0 +1,426 @@
+
+html,body{
+  background: #f5f7fc;
+}
+.page-index {
+  .icon-list {
+    background: #fff;
+    & ul {
+
+      > li {
+        position: relative;
+        @include hair-line-r($baseBorderColor);
+        .block-a {
+          height: pxToRem(210px);
+          cursor: pointer;
+          display: block;
+          position: relative;
+          @include hair-line-b($baseBorderColor);
+          &.block-a-bottom:after {
+            display: none;
+          }
+          .out-box {
+            text-align: center;
+            display: block;
+          }
+          .span-a-text {
+            color: #333;
+            display: inline-block;
+            font-size: pxToRem(42px);
+            margin-top: pxToRem(37px);
+            margin-left: pxToRem(62px);
+            vertical-align: middle;
+          }
+          .icon-box {
+            width: pxToRem(180px);
+            height: pxToRem(120px);
+            display: inline-block;
+            margin-top: pxToRem(30px);
+            margin-left: pxToRem(33px);
+            vertical-align: middle;
+          }
+          .icon-box.icon1 {
+            background: url("../images/icon1.png") no-repeat;
+            background-size: cover;
+          }
+          .icon-box.icon2 {
+            background: url("../images/icon2.png") no-repeat;
+            background-size: cover;
+          }
+          .icon-box.icon3 {
+            background: url("../images/icon3.png") no-repeat;
+            background-size: cover;
+          }
+          .icon-box.icon4 {
+            background: url("../images/icon4.png") no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      > li:nth-child(even):after {
+        display: none;
+      }
+    }
+
+  }
+
+  .bmgg-box {
+    height: pxToRem(150px);
+    margin-top: pxToRem(14px);
+    background: #fff;
+    position: relative;
+    @include hair-line-t($baseBorderColor);
+    & .bmgg-pic {
+      width: pxToRem(190px);
+      height: pxToRem(55px);
+      background: url("../images/text.png") no-repeat;
+      background-size: cover;
+      float: left;
+      margin-top: pxToRem(48px);
+      margin-left: pxToRem(23px);
+    }
+    & .bmgg-news {
+      display: inline-block;
+      border-left: 1px solid #e6e6e6;
+      margin-top: pxToRem(22px);
+      margin-left: pxToRem(24px);
+      height: pxToRem(105px);
+      overflow: hidden;
+      & ul {
+        padding-left: pxToRem(25px);
+        > li {
+          display: block;
+        }
+        > li .green-cir {
+          width: pxToRem(12px);
+          height: pxToRem(12px);
+          background: #1bceaf;
+          border-radius: pxToRem(60px);
+          vertical-align: middle;
+          display: inline-block;
+        }
+        > li span {
+          font-size: pxToRem(36px);
+          color: #838383;
+          display: inline-block;
+          margin-left: pxToRem(15px);
+        }
+      }
+    }
+  }
+
+  .hot-hospital {
+    padding-bottom: pxToRem(38px);
+    margin-top: pxToRem(18px);
+    background: #fff;
+    & .title-box {
+      font-size: pxToRem(42px);
+      color: #959595;
+      display: block;
+      padding-left: pxToRem(24px);
+      padding-top: pxToRem(42px);
+      padding-bottom: pxToRem(28px);
+    }
+    & .hospital-list-box {
+
+      & ul {
+        padding-right: pxToRem(12px);
+
+        > li {
+
+        }
+        > li .hospital-box {
+          //height: 100%;
+          border-radius: pxToRem(20px);
+          border: 1px solid #d8d8d8;
+          margin-left: pxToRem(15px);
+          margin-right: pxToRem(4px);
+          > img {
+            width: 100%;
+            display: block;
+            //height: pxToRem(230px);
+            padding: pxToRem(10px);
+          }
+
+          > .hospital-text-box {
+            margin-left: pxToRem(16px);
+            margin-right: pxToRem(16px);
+            margin-top: pxToRem(30px);
+            text-align: left;
+            display: block;
+          }
+          > .hospital-text-box .hospital-name {
+            height: pxToRem(66px);
+            line-height: pxToRem(66px);
+            display: block;
+            color: #333;
+            font-size: pxToRem(42px);
+            //margin-top: pxToRem(38px);
+          }
+          > .hospital-text-box .hospital-rank {
+            height: pxToRem(60px);
+            line-height: pxToRem(60px);
+            font-size: pxToRem(36px);
+            color: #f89e00;
+            display: inline-block;
+          }
+          > .hospital-text-box .yb-text {
+            width: pxToRem(92px);
+            height: pxToRem(50px);
+            line-height: pxToRem(45px);
+            text-align: center;
+            border: 1px solid #b4b4b4;
+            color: #b4b4b4;
+            font-size: pxToRem(32px);
+            border-radius: pxToRem(26px);
+            display: inline-block;
+            margin-left: pxToRem(22px);
+          }
+          > .hospital-text-box .doctor-num {
+            height: pxToRem(76px);
+            line-height: pxToRem(66px);
+            font-size: pxToRem(36px);
+            color: #646464;
+            display: inline-block;
+          }
+          > .hospital-text-box .number-box {
+            font-size: pxToRem(36px);
+            color: #646464;
+            display: inline-block;
+            margin-left: pxToRem(13px);
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .news-tab-box {
+    margin-top: pxToRem(18px);
+    height: pxToRem(128px);
+    line-height: pxToRem(128px);
+    background: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    display: -moz-box;
+    display: -webkit-box;
+    position: relative;
+    @include hair-line-b($baseBorderColor);
+    & .tab-list-box {
+      font-size: pxToRem(42px);
+      overflow: hidden;
+      -moz-box-flex: 1;
+      -webkit-box-flex: 1;
+      > ul {
+
+        > li {
+          float: left;
+        }
+        > li a {
+          padding-left: pxToRem(56px);
+          padding-right: pxToRem(56px);
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+  .news-list-box {
+    background: #fff;
+
+    & ul {
+
+      > li {
+
+        > .news-a {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          padding: pxToRem(40px) pxToRem($baseSpace) pxToRem(40px) 0;
+          margin-left: pxToRem($baseSpace);
+          @include flex-box();
+          @include hair-line-b($baseBorderColor);
+        }
+        > .news-a .news-title {
+          flex: 1;
+          overflow: hidden;
+        }
+        > .news-a .title-span {
+          color: #333;
+          font-size: pxToRem(44px);
+          position: relative;
+          font-weight: normal;
+          overflow: hidden;
+          white-space: normal;
+          text-overflow: ellipsis;
+          padding-bottom: pxToRem(20px);
+        }
+        > .news-a .content-span {
+          overflow: hidden;
+          white-space: normal;
+          text-overflow: ellipsis;
+          color: #969696;
+          font-size: pxToRem(42px);
+        }
+        > .news-a .news-pic-box {
+          width: pxToRem(320px);
+          height: pxToRem(220px);
+          border-radius: pxToRem(20px);
+        }
+        > .news-a .news-pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      > li .news-a:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  .find_nav {
+    width: 100%;
+    height: pxToRem(128px);
+    margin-top: pxToRem(18px);
+    background-color: #fff;
+    top: 0;
+    z-index: 1;
+    position: relative;
+    @include hair-line-b($baseBorderColor);
+    display: -moz-box;
+    display: -webkit-box;
+    .list-more-nav-box{
+      position: absolute;
+      top:100%;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 3px 3px 3px rgba(100,100,100,0.1);
+      z-index: 10;
+      >ul{
+        padding: pxToRem(30px) pxToRem($baseSpace);
+        >li{
+          float: left;
+          width: 33.3%;
+          margin-bottom: pxToRem(30px);
+          >a{
+            display: block;
+            height: pxToRem(90px);
+            line-height: pxToRem(88px);
+            border-radius: pxToRem(45px);
+            border: 1px solid #ccc;
+            text-align: center;
+            color: #333;
+            margin-left: pxToRem(20px);
+            margin-right: pxToRem(20px);
+          }
+        }
+      }
+    }
+  }
+  .find_nav_left {
+    height: pxToRem(128px);
+    position: relative;
+  /*  overflow: hidden;*/
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    margin-right: pxToRem(100px);
+    .more{
+      display: block;
+      height: pxToRem(128px);
+      line-height: pxToRem(128px);
+      text-align: center;
+      .iconfont{
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        color: #999;
+        transition: all 0.5s;
+      }
+      &.down{
+        padding-right: pxToRem(30px);
+        .iconfont{
+          transform: rotate(90deg);
+        }
+      }
+      &.up{
+        .iconfont{
+          transform: rotate(270deg);
+        }
+      }
+    }
+  }
+  .find_nav_left .arrow-left {
+    position: absolute;
+    right: pxToRem(-100px);
+    top:0;
+    height: 100%;
+    width: pxToRem(100px);
+    background: #fff;
+  }
+  .find_nav_list {
+    position: absolute;
+    left: 0;
+  }
+  .find_nav_list ul {
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+  }
+  .find_nav_list ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 20px;
+  }
+  .find_nav_list ul li a {
+    display: block;
+    width: 100%;
+    height: pxToRem(128px);
+    line-height: pxToRem(128px);
+    font-size: pxToRem(42px);
+    text-align: center;
+    color: #666;
+  }
+  .find_nav_cur a {
+    color: #48a5f4 !important;
+  }
+  .find_nav_list a.active {
+    color: #C00
+  }
+  .sideline {
+    display: block;
+    position: absolute;
+    border: 0;
+    height: 2px;
+    background-color: #48a5f4;
+    left: 0;
+    top: pxToRem(122px);
+    pointer-events: none;
+  }
+  .li_list {
+    min-height: 800px;
+    font-size: 40px;
+    line-height: 800px;
+    color: #fff;
+    text-align: center
+  }
+  .swipe {
+    padding: 70px 0 0 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

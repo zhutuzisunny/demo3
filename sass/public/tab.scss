@@ -1,0 +1,32 @@
+.tab{
+  display: none;
+  &.active{
+    display: block;
+  }
+}
+
+.tab-nav{
+  position: relative;
+  background: #fff;
+  @include flex-box;
+  @include hair-line-b($baseBorderColor);
+  margin-bottom: pxToRem(18px);
+  >a{
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    font-size: pxToRem($baseFontSize-md);
+    color: $color-text;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding:pxToRem(20px) pxToRem(20px);
+    border-bottom: 2px solid transparent;
+    z-index: 16;
+    &.active{
+        color: $color-primary;
+        border-bottom-color: $color-primary;
+    }
+  }
+}

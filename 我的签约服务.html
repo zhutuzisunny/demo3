@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>我的签约服务</title>
+</head>
+<body>
+<section class="page-wrap my-sign-service">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">我的签约服务</div>
+        </div>
+    </header>
+
+    <div class="qy-list-box">
+        <ul id="qy-ul">
+            <li>
+                <div class="out-box">
+                    <i class="pencil-icon"></i>
+                    <span>签约服务：中心团队</span>
+                    <span class="date">2017-6-12</span>
+                    <i class="icon-down"></i>
+                </div>
+                <div class="content-list-box">
+                    <ul>
+                        <li>
+                            <i class="qy-icon"></i>
+                            <div class="text-box">
+                                <span class="blue-text">护理服务</span>
+                                <span>服务内容：输液、换药、静脉采血导尿等。</span>
+                                <span>上次时间：2016/04/12</span>
+                                <span>医生：张晓林</span>
+                            </div>
+                            <a class="cklc-text" href="护理服务.html">查看历次</a>
+                            <a class="pj-btn" href="服务评价.html">去评价</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </li>
+            <li>
+                <div class="out-box">
+                    <i class="pencil-icon"></i>
+                    <span>签约服务：中心团队</span>
+                    <span class="date">2017-6-12</span>
+                    <i class="icon-down"></i>
+                </div>
+                <div class="content-list-box">
+                    <ul>
+                        <li>
+                            <i class="qy-icon"></i>
+                            <div class="text-box">
+                                <span class="blue-text">护理服务</span>
+                                <span>服务内容：输液、换药、静脉采血导尿等。</span>
+                                <span>上次时间：2016/04/12</span>
+                                <span>医生：张晓林</span>
+                            </div>
+                            <a class="cklc-text" href="护理服务.html">查看历次</a>
+                            <a class="pj-btn" href="服务评价.html">去评价</a>
+                        </li>
+                        <li>
+                            <i class="qy-icon"></i>
+                            <div class="text-box">
+                                <span class="blue-text">心理评估</span>
+                                <span>服务内容：老年人认知评估、日常生活能力评估，力量评估等。</span>
+                                <span>上次时间：2016/04/12</span>
+                                <span>医生：张晓林</span>
+                            </div>
+                            <a class="cklc-text" href="护理服务.html">查看历次</a>
+                            <a class="pj-btn" href="服务评价.html">去评价</a>
+                        </li>
+                        <li>
+                            <i class="qy-icon"></i>
+                            <div class="text-box">
+                                <span class="blue-text">糖尿病随访</span>
+                                <span>服务内容：高血压跟踪，访问，提供医疗方案。</span>
+                                <span>上次时间：2016/04/12</span>
+                                <span>医生：张晓林</span>
+                            </div>
+                            <a class="cklc-text" href="护理服务.html">查看历次</a>
+                            <a class="pj-btn" href="服务评价.html">去评价</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(function(){
+        $("#qy-ul").children('li').find(".out-box").on('click',function(){
+
+            var liElem=$(this).parent();
+            liElem.siblings().removeClass('active');
+            var selectElem=liElem.find('.content-list-box');
+            if(selectElem.length<1){
+                return
+            }
+            if(liElem.hasClass('active')){
+                liElem.removeClass('active')
+            }else{
+                liElem.addClass('active');
+            }
+        });
+        $("#qy-ul").children('li').find(".content-list-box").find("li").click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            var liElem= $(this).parent();
+            //liElem.find('.input-select').val(this.innerText);
+            liElem.removeClass('active')
+        });
+    });
+</script>
+</body>
+</html>

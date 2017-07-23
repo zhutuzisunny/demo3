@@ -1,0 +1,199 @@
+/*专题分析 模块页面样式*/
+
+
+
+
+
+.page-special{
+    @include flex-box();
+    height: 100%;
+    background:#eeeeee;
+    flex-direction: column;
+    .special-classify{
+        background: #fff;
+        border-radius: pxToRem(20px);
+        margin:pxToRem(18px);
+        flex: 1;
+        .special-list-box{
+            padding: pxToRem(60px) 0;
+            >li{
+                >a{
+                    display: block;
+                    color: #646464;
+                    padding:pxToRem(20px) 0;
+                    margin-bottom: pxToRem(30px);
+                    .img-wrap{
+                        display: block;
+                        margin: 0 auto;
+                        width: pxToRem(174px);
+                        height: pxToRem(174px);
+                        margin-bottom: pxToRem(18px);
+                    }
+                    .text-wrap{
+                        display: block;
+                        text-align: center;
+                        color: #646464;
+                        font-size: pxToRem(36px);
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+/*门诊服务*/
+.top-condition-filter{
+    background: #fff;
+    margin-top: pxToRem(16px);
+    margin-bottom: pxToRem(16px);
+    .item-content{
+        .icon-filter{
+            display: inline-block;
+            vertical-align: middle;
+            width: pxToRem(60px);
+            height: pxToRem(60px);
+            margin-right: pxToRem(10px);
+            background: url("../images/icon-filter-grey.png") no-repeat;
+            background-size: cover;
+            margin-top: pxToRem(-6px);
+        }
+        font-size: pxToRem(48px);
+        color: #646464;
+        .span-color{
+            color: #02af6d;
+        }
+    }
+    .item-after{
+        .icon-map{
+            display: inline-block;
+            vertical-align: middle;
+            width: pxToRem(60px);
+            height: pxToRem(60px);
+            margin-right: pxToRem(20px);
+            background: url("../images/icon-map-grey.png") no-repeat;
+            background-size: cover;
+        }
+        .name{
+            font-size: pxToRem(48px);
+            color: #02af6d;
+            margin-right: pxToRem(18px);
+            margin-top: pxToRem(-3px);
+        }
+    }
+}
+.mz-data-chart-box{
+    position: relative;
+    @include hair-line-b($baseBorderColor);
+    .text-wrap{
+        padding: pxToRem(40px) pxToRem($baseSpace) 0 pxToRem($baseSpace);
+        .label-text{
+            font-size: pxToRem(42px);
+            color: #000000;
+            margin-right: pxToRem(30px);
+        }
+        .number{
+            font-size: pxToRem(42px);
+            color: #0db35e;
+            font-weight: normal;
+        }
+        .until{
+            color: #aeaeae;
+            font-size: pxToRem(30px);
+            font-style: normal;
+        }
+    }
+    .chart-box{
+        height: pxToRem(600px);
+    }
+}
+.mz-servers-rank{
+    margin-bottom: 0;
+
+    &:after{
+        display: none;
+    }
+    &:before{
+        display: none;
+    }
+    >div{
+        position: relative;
+        padding:pxToRem(30px) pxToRem($baseSpace);
+        @include hair-line-r($baseBorderColor);
+        &:last-child:after{
+            display: none;
+        }
+    }
+    .servers-rank-header{
+        height: pxToRem(80px);
+        line-height: pxToRem(80px);
+        font-size: pxToRem(36px);
+        color: #7a7a7a;
+        .rank-name{
+            color: #f19149;
+            @include text-ellipsis-l;
+            padding-right: pxToRem(15px);
+        }
+        .rank-number{
+            padding-left: pxToRem(15px);
+            @include text-ellipsis-l;
+        }
+        &.last{
+            .rank-name{
+                color: #02af6d;
+            }
+        }
+    }
+    .servers-rank-row{
+        height: pxToRem(80px);
+        line-height: pxToRem(80px);
+        font-size: pxToRem(36px);
+        color: #333333;
+        .rank-name{
+            padding-right: pxToRem(15px);
+
+            @include text-ellipsis-l;
+        }
+        .rank-number{
+            @include text-ellipsis-l;
+            padding-left: pxToRem(15px);
+        }
+    }
+
+
+
+}
+
+
+/*门诊疾病谱*/
+.hypertension-swiper-box{
+    .chart-box{
+        height: pxToRem(600px);
+    }
+    .swiper-pagination{
+        bottom:15px;
+    }
+}
+
+.mzjbp-data-box{
+    .big-text{
+        padding:pxToRem(28px) pxToRem($baseSpace);
+        .name{
+            font-size: pxToRem(42px);
+            color: #000000;
+        }
+        .number{
+            font-size: pxToRem(54px);
+            color: #24a8e5;
+            font-weight: normal;
+            text-decoration: underline;
+            padding-left: pxToRem(30px);
+        }
+    }
+   .chart-box{
+        height: pxToRem(560px);
+   }
+
+}

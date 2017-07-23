@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+    <title>科室列表</title>
+</head>
+<body>
+<section class="page-wrap hospital-detail">
+    <header class="header-box grey fixed">
+        <div class="header-content">
+            <div class="left-tool">
+                <a class="back" href="#"><i class="iconfont icon-back"></i></a>
+            </div>
+            <div class="title">科室列表</div>
+        </div>
+    </header>
+    <div class="box-left">
+        <dl>
+            <dd>
+                <a class="active" href="javascript:void(0);">内科</a>
+                <a href="javascript:void(0);">外科</a>
+                <a href="javascript:void(0);">妇产科</a>
+                <a href="javascript:void(0);">儿科</a>
+                <a href="javascript:void(0);">骨科</a>
+                <a href="javascript:void(0);">口腔科</a>
+                <a href="javascript:void(0);">眼科</a>
+                <a href="javascript:void(0);">中医科</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="box-right">
+        <ul>
+            <li><a href="科室详情.html">风湿免疫科</a></li>
+            <li><a href="科室详情.html">呼吸内科</a></li>
+            <li><a href="科室详情.html">老年病科</a></li>
+            <li><a href="科室详情.html">内分泌科</a></li>
+            <li><a href="科室详情.html">神经科</a></li>
+            <li><a href="科室详情.html">神经内科</a></li>
+            <li><a href="科室详情.html">肾病内科</a></li>
+            <li><a href="科室详情.html">消化科</a></li>
+            <li><a href="科室详情.html">心脏内科</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<script src="lib/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('dd').find("a").click(function(){
+            if( ! $(this).hasClass('active')){
+                $('.box-right').show();
+                $(this).addClass('active').siblings().removeClass('active');
+            }else{
+
+                $(this).removeClass('active');
+            }
+
+        })
+    });
+
+
+</script>
+</body>
+</html>
